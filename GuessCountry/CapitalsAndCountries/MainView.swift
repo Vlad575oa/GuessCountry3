@@ -19,6 +19,7 @@ struct MainView: View {
         Picker(selection: $guessOption, label: Text("Угадывать:")) {
           Text("Страна").tag(0)
           Text("Столица").tag(1)
+          Text("Поиск").tag(2)
         }
         .pickerStyle(SegmentedPickerStyle())
         .padding()
@@ -36,9 +37,11 @@ struct MainView: View {
 
         if guessOption == 0 {
           CountryView()
-        } else {
+        } else if guessOption ==  1 {
 
           CapitalView()
+        } else {
+          SearchView()
         }
       }
       }

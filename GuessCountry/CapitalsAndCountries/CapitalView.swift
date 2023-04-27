@@ -32,26 +32,11 @@ struct CapitalView: View {
       }
     }
   }
-  var filteredResults: String {
-    let filteredDictionary = self.filteredDictionary.filter { key, value in
-      key.localizedCaseInsensitiveContains(searchText) || value.localizedCaseInsensitiveContains(searchText)
-    }
-    return filteredDictionary.map { "\($0.key) - \($0.value)" }.joined(separator: ", ")
-  }
-  
+
   let dictionary = CountriesAndCapitals().dictionary
 
   var body: some View {
       VStack {
-    
-        TextField("  Найти страну или столицу", text: $searchText)
-          .padding(.vertical, 5)
-          .background(Color(.systemGray6))
-          .cornerRadius(10)
-          .padding(.horizontal, 20)
-
-        Text("\(filteredResults)")
-          .padding()
 
         Text("Столица \(currentCapital)")
           .multilineTextAlignment(.center)
@@ -119,17 +104,19 @@ struct CapitalView: View {
           correctAnswersCount += 1
           newQuestion()
       } else {
-          // Answer is incorrect, show alert and increase wrong answers count
-          wrongAnswersCount += 1
-          let message = "Неправильно! Правильный ответ: \(currentCountry)"
-          let alert = UIAlertController(title: "Результат", message: message, preferredStyle: .alert)
-          alert.addAction(UIAlertAction(title: "OK", style: .default))
-          if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-             let rootViewController = windowScene.windows.first?.rootViewController {
-              rootViewController.present(alert, animated: true)
-          }
+        // Answer is incorrect, show alert and increase wrong answers count
+        wrongAnswersCount += 1
+        let message = "Неправильно! Правильный ответ: \(currentCountry)"
+        let alert = UIAlertController(title: "Результат", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+          self.newQuestion()
+        }))
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+           let rootViewController = windowScene.windows.first?.rootViewController {
+          rootViewController.present(alert, animated: true)
+        }
       }
-  }
+      }
 
   // Generate new question
   func newQuestion() {
