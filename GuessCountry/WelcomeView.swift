@@ -28,7 +28,7 @@ struct WelcomeView: View {
                 .modifier(TextModifier(color: .blue))
             }
             NavigationLink(destination: MainView()) {
-              Text("Выбери Страну")
+              Text("Угадай страну")
                 .modifier(TextModifier(color: .purple))
             }
 Spacer()

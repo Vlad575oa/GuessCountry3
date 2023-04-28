@@ -38,14 +38,14 @@ struct CapitalView: View {
   var body: some View {
       VStack {
 
-        Text("Столица \(currentCapital)")
+        Text(currentCapital)
           .multilineTextAlignment(.center)
           .font(.system(size: 30))
           .padding()
           .background(.green.opacity(0.7))
           .cornerRadius(10)
 
-        Text("страна ?")
+        Text("страна?")
           .font(.system(size: 30))
           .padding()
           .cornerRadius(10)

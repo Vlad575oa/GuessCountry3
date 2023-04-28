@@ -37,14 +37,14 @@ struct CountryView: View {
     
     VStack {
       
-      Text("Страна \(currentCountry)")
+      Text(currentCountry)
         .multilineTextAlignment(.center)
         .font(.system(size: 30))
         .padding()
         .background(.green.opacity(0.7))
         .cornerRadius(10)
       
-      Text("cтолица ?")
+      Text("cтолица?")
         .font(.system(size: 30))
         .padding()
         .cornerRadius(10)
@@ -89,7 +89,7 @@ struct CountryView: View {
           .cornerRadius(5)
           .scaleEffect(isAnimating ? 1.1 : 1.0)
           .shadow(color: Color.gray.opacity(0.9), radius: 4, x: 5, y: 5)
-          .padding(.leading, 15)
+          .padding()
         
       }
       .onAppear(perform: newQuestion)      
