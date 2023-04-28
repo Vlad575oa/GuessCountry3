@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  GuessCountry
+
+  Created by user on 28.04.2023.
+  
+*/
+"Welcome" = "Добро пожаловать!";
+"Guess the flag" = "Угадай флаг";
+"Guess the country" = "Угадай страну";
+"Country" = "Страна";
+"Capital" = "Столица";
+"Search" = "Поиск";
+
+"Capital?" = "Столица?";
+"Country?" = "Старана?";
+"Answer" = "ответ";
+"Reset" = "Сбросить счёт";
+"Wrong! Right answer:" = "Неправильно! Правильный ответ:";
+"Result" = "Result";
+"Find a country or capital" = "Найди страну или столицу";
+"Score" = "Счёт";
+"Total score" = "Общий счёт";
+"Continue" = "Продолжить";
+"Right answer" = "Правильный ответ";
+"You have chosen" = "Вы выбрали";
