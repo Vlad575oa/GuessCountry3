@@ -61,7 +61,7 @@ struct FlagView: View {
           }
           Spacer()
             .frame(height: 30)
-          Text("Cчет \(score)")
+          Text("Score \(score)")
             .foregroundColor(.white)
             .font(.largeTitle)
             .cornerRadius(30)
@@ -78,7 +78,7 @@ struct FlagView: View {
             score = 0
           }
         }) {
-          Text("Сбросить счет")
+          Text("Reset")
             .font(.headline)
             .foregroundColor(.white)
             .padding()
@@ -94,11 +94,11 @@ struct FlagView: View {
           title: Text(scoreTitle)
             .foregroundColor(.red)
             .font(.headline),
-          message: Text("Общий счет \(score)")
+          message: Text("Total score \(score)")
             .font(.headline)
           ,
           buttons: [
-            .default(Text("Продолжить")) {
+            .default(Text("Continue")) {
               self.colorCorrectAnswer = .white
               self.askQuestion()
             },  .default(Text("")) {
@@ -118,12 +118,12 @@ struct FlagView: View {
 
   func flagTapped(_ number: Int) {
     if number == correctAnswer {
-      scoreTitle = "Правильный ответ!"
+      scoreTitle = "Right answer!"
       score += 1
     } else {
       scoreTitle = """
-Вы выбрали \(countries.flagArray[number].name)
-Правильный ответ \(correctAnswer + 1)
+You have chosen \(countries.flagArray[number].name)
+Right answer \(correctAnswer + 1)
 """
       score -= 1
     }

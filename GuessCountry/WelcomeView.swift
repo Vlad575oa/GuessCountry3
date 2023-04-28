@@ -16,7 +16,7 @@ struct WelcomeView: View {
         LinearGradient(gradient: Gradient(colors: [Color.green, Color.indigo, Color.green]), startPoint: .topLeading, endPoint: .bottomTrailing)
           .edgesIgnoringSafeArea(.all)
         VStack(spacing: 50){
-          Text("Добро пожаловать в моё приложение")
+          Text("Welcome")
             .multilineTextAlignment(.center)
             .font(.system(size: 30, weight: .heavy, design: .default))
             .shimmer(.init(tint: .white.opacity(0.5), highlight: .white, blur: 5))
@@ -25,17 +25,17 @@ struct WelcomeView: View {
             .frame(height: 10)
 
             NavigationLink(destination: FlagView()) {
-              Text("Угадай флаг")
+              Text("Guess the flag")
                 .modifier(TextModifier(color: .blue))
             }
             NavigationLink(destination: MainView()) {
-              Text("Угадай страну")
+              Text("Guess the country")
                 .modifier(TextModifier(color: .purple))
             }
 Spacer()
           }
         }
-        .navigationBarTitle("Меню", displayMode: .inline)
+        .navigationBarTitle("Menu", displayMode: .inline)
         .foregroundColor(.white)
       }
     }

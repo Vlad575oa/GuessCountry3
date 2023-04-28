@@ -45,7 +45,7 @@ struct CapitalView: View {
           .background(.green.opacity(0.7))
           .cornerRadius(10)
 
-        Text("страна?")
+        Text("Country?")
           .font(.system(size: 30))
           .padding()
           .cornerRadius(10)
@@ -63,9 +63,9 @@ struct CapitalView: View {
           }
         }
         HStack {
-          Text("Ответ +: \(correctAnswersCount)")
+          Text("Answer +: \(correctAnswersCount)")
             .padding()
-          Text("Ответ -: \(wrongAnswersCount)")
+          Text("Answer -: \(wrongAnswersCount)")
             .padding()
         }
         Spacer()
@@ -80,7 +80,7 @@ struct CapitalView: View {
             isAnimating = false
           }
         }) {
-          Text("Сбросить счет")
+          Text("Reset")
             .font(.system(size: 18, weight: .medium))
             .font(.headline)
             .foregroundColor(.black)
@@ -106,8 +106,8 @@ struct CapitalView: View {
       } else {
         // Answer is incorrect, show alert and increase wrong answers count
         wrongAnswersCount += 1
-        let message = "Неправильно! Правильный ответ: \(currentCountry)"
-        let alert = UIAlertController(title: "Результат", message: message, preferredStyle: .alert)
+        let message = "Wrong! Right answer: \(currentCountry)"
+        let alert = UIAlertController(title: "Result", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
           self.newQuestion()
         }))
