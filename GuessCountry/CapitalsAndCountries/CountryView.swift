@@ -17,22 +17,12 @@ struct CountryView: View {
   // Количество неправильных ответов
   @State private var wrongAnswersCount = 0
   // Переменная для поиска
-  @State private var searchText = ""
+ 
   @State private var isAnimating = false
   @State private var guessOption = 0
   
   let dictionary = CountriesAndCapitals().dictionary
-  // Отфильтрованный словарь
-  var filteredDictionary: [String: String] {
-    if searchText.isEmpty {
-      return dictionary
-    } else {
-      return dictionary.filter { key, value in
-        key.localizedCaseInsensitiveContains(searchText) || value.localizedCaseInsensitiveContains(searchText)
-      }
-    }
-  }
-  
+
   var body: some View {
     
     VStack {
@@ -124,7 +114,7 @@ extension CountryView {
     } else {
       // Показываем сообщение
       wrongAnswersCount += 1
-      let message = "Неправильно! Правильный ответ: \(currentCountry)"
+      let message = "Неправильно! Правильный ответ: \(currentCapital)"
       let alert = UIAlertController(title: "Результат", message: message, preferredStyle: .alert)
       alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
         self.newQuestion()
@@ -143,29 +133,6 @@ extension CountryView {
       let randomKey = dictionary.keys.randomElement()!
       // Проверяем, что выбранная столица не совпадает с правильным ответом и не повторяется среди вариантов ответа
       if dictionary[randomKey] != capital && !options.contains(dictionary[randomKey]!) {
-        options.append(dictionary[randomKey]!)
-      }
-    }
-    return options.shuffled()
-  }
-  
-  func answerOptionsForCountry() -> [String] {
-    var options = [currentCountry]
-    while options.count < 3 {
-      let randomValue = dictionary.values.randomElement()!
-      if randomValue != currentCountry && !options.contains(randomValue) {
-        options.append(randomValue)
-      }
-    }
-    return options.shuffled()
-  }
-  
-  
-  func answerOptionsForCapital() -> [String] {
-    var options = [currentCapital]
-    while options.count < 3 {
-      let randomKey = dictionary.keys.randomElement()!
-      if dictionary[randomKey] != currentCapital && !options.contains(dictionary[randomKey]!) {
         options.append(dictionary[randomKey]!)
       }
     }

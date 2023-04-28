@@ -8,18 +8,8 @@
 import SwiftUI
 
 struct SearchView: View {
-  @State private var currentCapital = ""
-  // Three answer options
-  @State private var currentCountry = ""
-
-  @State private var answerOptions = [String]()
-  // Number of correct answers
-  @State private var correctAnswersCount = 0
-  // Number of incorrect answers
-  @State private var wrongAnswersCount = 0
-  // Search text
   @State private var searchText = ""
-  @State private var isAnimating = false
+
   // Filtered dictionary
   var filteredDictionary: [String: String] {
     if searchText.isEmpty {
