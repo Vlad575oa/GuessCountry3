@@ -9,6 +9,7 @@ import SwiftUI
 
 struct WelcomeView: View {
 
+
   var body: some View {
     NavigationView {
       ZStack {
@@ -38,7 +39,6 @@ Spacer()
         .foregroundColor(.white)
       }
     }
-
   }
 
 struct WelcomeView_Previews: PreviewProvider {

@@ -32,7 +32,6 @@ struct MainView: View {
           }
         }
         Spacer()
-
         // Show either CapitalAndCountryView or CountryAndCapitalView based on the user's picker selection
 
         if guessOption == 0 {

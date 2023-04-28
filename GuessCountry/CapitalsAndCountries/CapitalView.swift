@@ -90,7 +90,7 @@ struct CapitalView: View {
             .cornerRadius(5)
             .scaleEffect(isAnimating ? 1.1 : 1.0)
             .shadow(color: Color.gray.opacity(0.9), radius: 4, x: 5, y: 5)
-            .padding(.leading, 15)
+            .padding()
         }
         .onAppear(perform: newQuestion)
       }
@@ -120,12 +120,14 @@ struct CapitalView: View {
 
   // Generate new question
   func newQuestion() {
+    withAnimation(.easeIn(duration: 0.5)) {
       // Get a random country and its capital from the filtered dictionary
       let (country, capital) = filteredDictionary.randomElement()!
       currentCountry = country
       currentCapital = capital
       // Generate three country answer options
       answerOptions = answerOptions(for: country)
+    }
   }
 
   // Generate three capital answer options that do not include the correct answer

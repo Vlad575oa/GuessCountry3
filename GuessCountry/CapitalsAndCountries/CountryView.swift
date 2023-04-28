@@ -97,12 +97,14 @@ struct CapitalAndCountryView_Previews: PreviewProvider {
 extension CountryView {
   
   func newQuestion() {
-    // Получаем случайную страну и ее столицу из отфильтрованного словаря
-    let (country, capital) = dictionary.randomElement()!
-    currentCountry = country
-    currentCapital = capital
-    // Генерируем три варианта ответа
-    answerOptions = answerOptions(for: capital)
+    withAnimation(.easeIn(duration: 0.5)) {
+      // Получаем случайную страну и ее столицу из отфильтрованного словаря
+      let (country, capital) = dictionary.randomElement()!
+      currentCountry = country
+      currentCapital = capital
+      // Генерируем три варианта ответа
+      answerOptions = answerOptions(for: capital)
+    }
   }
   
   func checkAnswer(_ answer: String) {
@@ -127,18 +129,18 @@ extension CountryView {
   }
   
   func answerOptions(for capital: String) -> [String] {
-    var options = [capital]
-    while options.count < 3 {
-      // Выбираем случайную страну из словаря
-      let randomKey = dictionary.keys.randomElement()!
-      // Проверяем, что выбранная столица не совпадает с правильным ответом и не повторяется среди вариантов ответа
-      if dictionary[randomKey] != capital && !options.contains(dictionary[randomKey]!) {
-        options.append(dictionary[randomKey]!)
+
+      var options = [capital]
+      while options.count < 3 {
+        // Выбираем случайную страну из словаря
+        let randomKey = dictionary.keys.randomElement()!
+        // Проверяем, что выбранная столица не совпадает с правильным ответом и не повторяется среди вариантов ответа
+        if dictionary[randomKey] != capital && !options.contains(dictionary[randomKey]!) {
+          options.append(dictionary[randomKey]!)
+        }
       }
+      return options.shuffled()
     }
-    return options.shuffled()
-  }
-  
 }
 
 
