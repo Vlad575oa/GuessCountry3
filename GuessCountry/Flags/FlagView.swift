@@ -29,7 +29,7 @@ struct FlagView: View {
       VStack {
 
         VStack(spacing: 10) {
-          Text(countries.flagsArray[correctAnswer])
+          Text(countries.flagArray[correctAnswer].name)
             .multilineTextAlignment(.center)
             .foregroundColor(.white)
             .font(.title)
@@ -44,7 +44,7 @@ struct FlagView: View {
                 }
                 self.flagTapped(number)
               } label: {
-                Image(self.countries.flagsArray[number])
+                Image(self.countries.flagArray[number].image)
                   .resizable()
                   .renderingMode(.original)
                   .interpolation(.high)
@@ -112,7 +112,7 @@ struct FlagView: View {
   }
 
   func askQuestion() {
-    countries.flagsArray.shuffle()
+    countries.flagArray.shuffle()
     correctAnswer = Int.random(in: 0...2)
   }
 
@@ -122,7 +122,7 @@ struct FlagView: View {
       score += 1
     } else {
       scoreTitle = """
-Вы выбрали \(countries.flagsArray[number])
+Вы выбрали \(countries.flagArray[number].name)
 Правильный ответ \(correctAnswer + 1)
 """
       score -= 1
