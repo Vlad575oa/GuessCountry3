@@ -5,28 +5,52 @@
   Created by user on 28.04.2023.
   
 */
-"Меню" = "Menu";
-"Добро пожаловать!" = "Welcome!";
-"Угадай флаг" = "Guess the flag";
-"Угадай страну" = "Guess the country";
-"Страна" = "Country";
-"Столица" = "Capital";
-"Поиск" = "Search";
+"Menu" = "Menu";
+"Welcome" = "Welcome!";
+"Guess the flag" = "Guess the flag";
+"Guess the country" = "Guess the country";
+"Country" = "Country";
+"Capital" = "Capital";
+"Search" = "Search";
 
-"Столица?" = "Capital?";
-"Старана?" = "Country?";
-"Ответ" = "Answer";
-"Сбросить счёт" = "Reset";
-"Неправильно! Правильный ответ:" = "Wrong! Right answer:";
-"Результат" = "Result";
-"Найди страну или столицу" = "Find a country or capital";
-"Счёт" = "Score";
-"Общий счёт" = "Total score";
-"Продолжить" = "Continue";
-"Правильный ответ" = "Right answer";
-"Вы выбрали" = "You have chosen";
+"Capital?" = "Capital?";
+"Country?" = "Country?";
+"Answer" = "Answer";
+"Reset" = "Reset";
+"Wrong! Right answer:" = "Wrong! Right answer:";
+"Result" = "Result";
+"Find a country or capital" = "Find a country or capital";
+"Score" = "Score";
+"Total score" = "Total score";
+"Continue" = "Continue";
+"Right answer" = "Right answer";
+"You have chosen" = "You have chosen";
 
 
+"Flag of Australia" = "Flag of Australia";
+"Flag of Andorra" = "Flag of Andorra";
+"Flag of Austria" = "Flag of Austria";
+"Flag of Azerbaijan" = "Flag of Azerbaijan";
+"Flag of Albania" = "Flag of Albania";
+"Flag of Algeria" = "Flag of Algeria";
+"Flag of Angola" = "Flag of Angola";
+"Flag of Argentina" = "Flag of Argentina";
+"Flag of Andorra" = "Flag of Andorra";
+"Flag of Armenia" = "Flag of Armenia";
+"Flag of Afghanistan" = "Flag of Afghanistan";
+"Flag of the Bahamas" = "Flag of the Bahamas";
+"Flag of Bangladesh" = "Flag of Bangladesh";
+"Flag of Barbados" = "Flag of Barbados";
+"Flag of Bahrain" = "Flag of Bahrain";
+"Flag of Belize" = "Flag of Belize";
+"Flag of Belarus" = "Flag of Belarus";
+"Flag of Belgium" = "Flag of Belgium";
+"Flag of Benin" = "Flag of Benin";
+"Flag of Bulgaria" = "Flag of Bulgaria";
+"Flag of Bolivia" = "Flag of Bolivia";
+"Flag of Bosnia and Herzegovina" = "Flag of Bosnia and Herzegovina";
+"Flag of Botswana" = "Flag of Botswana";
+"Flag of Brazil" = "Flag of Brazil";
 "Flag of Brunei" = "Flag of Brunei";
 "Flag of Burkina Faso" = "Flag of Burkina Faso";
 "Flag of Burundi" = "Flag of Burundi";
