@@ -345,7 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GuessCountry/Preview Content\"";
-				DEVELOPMENT_TEAM = T59UNF3D6N;
+				DEVELOPMENT_TEAM = BZ8K6AD5Y3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
@@ -377,7 +377,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GuessCountry/Preview Content\"";
-				DEVELOPMENT_TEAM = T59UNF3D6N;
+				DEVELOPMENT_TEAM = BZ8K6AD5Y3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
