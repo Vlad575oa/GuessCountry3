@@ -26,6 +26,7 @@
 /* Begin PBXFileReference section */
 		CE5DB62D29FC1AFC005D4369 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CE5DB62F29FC1B00005D4369 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE91BC6B29FD33F2002D21AE /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CED6E44F29FAF2CF003DE15E /* GuessCountry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessCountry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED6E45229FAF2CF003DE15E /* GuessCountryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessCountryApp.swift; sourceTree = "<group>"; };
 		CED6E45629FAF2D0003DE15E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -165,6 +166,7 @@
 				en,
 				Base,
 				ru,
+				"zh-Hant",
 			);
 			mainGroup = CED6E44629FAF2CF003DE15E;
 			productRefGroup = CED6E45029FAF2CF003DE15E /* Products */;
@@ -216,6 +218,7 @@
 			children = (
 				CE5DB62D29FC1AFC005D4369 /* en */,
 				CE5DB62F29FC1B00005D4369 /* ru */,
+				CE91BC6B29FD33F2002D21AE /* zh-Hant */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -361,7 +364,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = VO.GuessCountry;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GuessCountry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -393,7 +396,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = VO.GuessCountry;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GuessCountry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
