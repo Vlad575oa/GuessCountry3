@@ -1,8 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Флаг Объединённых Арабских Эмиратов.png",
-      "idiom" : "universal"
+      "filename" : "Флаг Объединённых Арабских Эмиратов.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

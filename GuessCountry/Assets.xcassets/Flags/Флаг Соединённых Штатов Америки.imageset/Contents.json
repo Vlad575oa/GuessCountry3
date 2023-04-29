@@ -1,8 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Флаг Соединённых Штатов Америки.png",
-      "idiom" : "universal"
+      "filename" : "Флаг Соединённых Штатов Америки.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

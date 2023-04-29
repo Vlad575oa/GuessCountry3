@@ -1,8 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Флаг Южно-Африканской Республики.png",
-      "idiom" : "universal"
+      "filename" : "Флаг Южно-Африканской Республики.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

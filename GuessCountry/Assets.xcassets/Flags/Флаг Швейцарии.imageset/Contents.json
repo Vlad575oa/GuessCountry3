@@ -1,8 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Флаг Швейцарии.png",
-      "idiom" : "universal"
+      "filename" : "Флаг Швейцарии.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

@@ -1,8 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Флаг Демократической Республики Конго.png",
-      "idiom" : "universal"
+      "filename" : "Флаг Демократической Республики Конго.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {
