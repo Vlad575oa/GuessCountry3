@@ -30,7 +30,7 @@ struct SearchView: View {
 
   var body: some View {
     VStack {
-      TextField("  Найти страну или столицу", text: $searchText)
+      TextField(NSLocalizedString("Find a country or capital", comment: ""), text: $searchText)
         .padding(.vertical, 5)
         .background(.white)
         .cornerRadius(10)
