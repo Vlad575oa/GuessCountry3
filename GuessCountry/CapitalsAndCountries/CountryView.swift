@@ -120,7 +120,7 @@ extension CountryView {
       // Answer is incorrect, increase wrong answer count and show a message
       wrongAnswersCount += 1
       let message = "\(NSLocalizedString("Wrong! Right answer:", comment: "")) \(currentCapital)"
-      let alert = UIAlertController(title: "Result", message: message, preferredStyle: .alert)
+      let alert = UIAlertController(title: NSLocalizedString("Result", comment: ""), message: message, preferredStyle: .alert)
       alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
         self.newQuestion()
       }))

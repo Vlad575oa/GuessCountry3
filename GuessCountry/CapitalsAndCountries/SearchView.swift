@@ -29,26 +29,28 @@ struct SearchView: View {
   }
 
   var body: some View {
-    VStack {
-      TextField(NSLocalizedString("Find a country or capital", comment: ""), text: $searchText)
+    VStack(spacing: 20) {
+      TextField(NSLocalizedString("  Find a country or capital", comment: ""), text: $searchText)
         .padding(.vertical, 5)
+        .padding(.horizontal, 20)
         .background(.white)
         .cornerRadius(10)
-        .padding(.horizontal, 20)
+        .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(Color.gray, lineWidth: 1)
+            )
 
       List(filteredResults(for: searchText)) { countryCapital in
         Text("\(countryCapital.country) - \(countryCapital.capital)")
          
-          .background(Color.white)
-          .cornerRadius(15)
+
       }
       .listStyle(.plain)
-      .listRowBackground(Color.pink)
       .cornerRadius(15)
-      .padding()
 
       Spacer()
     }
+    .padding()
   }
 }
 

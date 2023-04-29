@@ -42,7 +42,7 @@ class Flags {
 
     FlagNames(name: NSLocalizedString("Flag of Botswana", comment: ""), image: "Флаг Ботсваны"),
        FlagNames(name: NSLocalizedString("Flag of Brazil", comment: ""), image: "Флаг Бразилии"),
-       FlagNames(name: NSLocalizedString("Flag of Brunei", comment: ""), image: "Флаг Брунеи"),
+       FlagNames(name: NSLocalizedString("Flag of Brunei", comment: ""), image: "Флаг Брунея"),
        FlagNames(name: NSLocalizedString("Flag of Burkina Faso", comment: ""), image: "Флаг Буркина-Фасо"),
        FlagNames(name: NSLocalizedString("Flag of Burundi", comment: ""), image: "Флаг Бурунди"),
        FlagNames(name: NSLocalizedString("Flag of Bhutan", comment: ""), image: "Флаг Бутана"),
