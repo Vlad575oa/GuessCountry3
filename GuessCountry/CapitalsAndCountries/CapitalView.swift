@@ -114,12 +114,12 @@ struct CapitalView: View {
   func newQuestion() {
     withAnimation(.easeIn(duration: 0.5)) {
       // Get a random country and its corresponding capital from the array
-      let countryCapital = array.randomElement()!
-      currentCountry = countryCapital.country
-      currentCapital = countryCapital.capital
+      let country = array.randomElement()!
+      currentCountry = country.capital
+      currentCapital = country.country
       
       // Generate three possible answer options
-      answerOptions = answerOptions(for: currentCapital)
+      answerOptions = answerOptions(for: currentCountry)
     }
   }
   
