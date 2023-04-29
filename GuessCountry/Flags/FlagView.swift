@@ -122,8 +122,8 @@ struct FlagView: View {
       score += 1
     } else {
       scoreTitle = """
-You have chosen \(countries.flagArray[number].name)
-Right answer \(correctAnswer + 1)
+\(NSLocalizedString("You have chosen", comment:"")) \(countries.flagArray[number].name)
+\(NSLocalizedString("Right answer", comment: "")) \(correctAnswer + 1)
 """
       score -= 1
     }
