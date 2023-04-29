@@ -8,36 +8,45 @@
 import SwiftUI
 
 struct SearchView: View {
-  @State private var searchText = ""
+  var array = CountriesAndCapitals().countryAndCapital
 
-  // Filtered dictionary
-  var filteredDictionary: [String: String] {
-    if searchText.isEmpty {
-      return dictionary
+  @State private var searchText = ""
+  @State private var filteredArray = CountriesAndCapitals().countryAndCapital
+
+  func filteredResults(for searchQuery: String) -> [CountryCapital] {
+    if searchQuery.isEmpty {
+      return array // return the original array if the search query is empty
     } else {
-      return dictionary.filter { key, value in
-        key.localizedCaseInsensitiveContains(searchText) || value.localizedCaseInsensitiveContains(searchText)
+      // Filter the array to include only the elements whose country or capital contains the search query
+      let filteredArray = array.filter { countryCapital in
+        let lowercaseSearchQuery = searchQuery.lowercased()
+        let lowercaseCountry = countryCapital.country.lowercased()
+        let lowercaseCapital = countryCapital.capital.lowercased()
+        return lowercaseCountry.contains(lowercaseSearchQuery) || lowercaseCapital.contains(lowercaseSearchQuery)
       }
+      return filteredArray
     }
   }
-  var filteredResults: String {
-    let filteredDictionary = self.filteredDictionary.filter { key, value in
-      key.localizedCaseInsensitiveContains(searchText) || value.localizedCaseInsensitiveContains(searchText)
-    }
-    return filteredDictionary.map { "\($0.key) - \($0.value)" }.joined(separator: ", ")
-  }
-  let dictionary = CountriesAndCapitals().dictionary
 
   var body: some View {
     VStack {
       TextField("  Найти страну или столицу", text: $searchText)
         .padding(.vertical, 5)
-        .background(Color(.systemGray6))
+        .background(.white)
         .cornerRadius(10)
         .padding(.horizontal, 20)
-      
-      Text("\(filteredResults)")
-        .padding()
+
+      List(filteredResults(for: searchText)) { countryCapital in
+        Text("\(countryCapital.country) - \(countryCapital.capital)")
+         
+          .background(Color.white)
+          .cornerRadius(15)
+      }
+      .listStyle(.plain)
+      .listRowBackground(Color.pink)
+      .cornerRadius(15)
+      .padding()
+
       Spacer()
     }
   }

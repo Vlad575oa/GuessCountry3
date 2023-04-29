@@ -7,8 +7,44 @@
 
 import Foundation
 
+struct CountryCapital: Identifiable {
+    let id = UUID()
+    let country: String
+    let capital: String
+}
+
 class CountriesAndCapitals {
-  
+
+let countryAndCapital: [CountryCapital] =
+
+  [
+  CountryCapital(country: NSLocalizedString("Uruguay", comment: ""), capital: NSLocalizedString("Montevideo", comment: "")),
+  CountryCapital(country: NSLocalizedString("Federated States of Micronesia", comment: ""), capital: NSLocalizedString("Palikir", comment: "")),
+  CountryCapital(country: NSLocalizedString("Fiji", comment: ""), capital: NSLocalizedString("Suva", comment: "")),
+  CountryCapital(country: NSLocalizedString("Philippines", comment: ""), capital: NSLocalizedString("Manila", comment: "")),
+  CountryCapital(country: NSLocalizedString("Finland", comment: ""), capital: NSLocalizedString("Helsinki", comment: "")),
+  CountryCapital(country: NSLocalizedString("France", comment: ""), capital: NSLocalizedString("Paris", comment: "")),
+  CountryCapital(country: NSLocalizedString("Croatia", comment: ""), capital: NSLocalizedString("Zagreb", comment: "")),
+  CountryCapital(country: NSLocalizedString("Central African Republic", comment: ""), capital: NSLocalizedString("Bangui", comment: "")),
+  CountryCapital(country: NSLocalizedString("Chad", comment: ""), capital: NSLocalizedString("N'Djamena", comment: "")),
+  CountryCapital(country: NSLocalizedString("Montenegro", comment: ""), capital: NSLocalizedString("Podgorica", comment: "")),
+  CountryCapital(country: NSLocalizedString("Czechia", comment: ""), capital: NSLocalizedString("Prague", comment: "")),
+  CountryCapital(country: NSLocalizedString("Chile", comment: ""), capital: NSLocalizedString("Santiago", comment: "")),
+  CountryCapital(country: NSLocalizedString("Switzerland", comment: ""), capital: NSLocalizedString("Bern", comment: "")),
+  CountryCapital(country: NSLocalizedString("Sweden", comment: ""), capital: NSLocalizedString("Stockholm", comment: "")),
+  CountryCapital(country: NSLocalizedString("Sri Lanka", comment: ""), capital: NSLocalizedString("Sri Jayawardenepura Kotte", comment: "")),
+  CountryCapital(country: NSLocalizedString("Ecuador", comment: ""), capital: NSLocalizedString("Quito", comment: "")),
+  CountryCapital(country: NSLocalizedString("Equatorial Guinea", comment: ""), capital: NSLocalizedString("Malabo", comment: "")),
+  CountryCapital(country: NSLocalizedString("Eritrea", comment: ""), capital: NSLocalizedString("Asmara", comment: "")),
+  CountryCapital(country: NSLocalizedString("Estonia", comment: ""), capital: NSLocalizedString("Tallinn", comment: "")),
+  CountryCapital(country: NSLocalizedString("Ethiopia", comment: ""), capital: NSLocalizedString("Addis Ababa", comment: "")),
+  CountryCapital(country: NSLocalizedString("South Africa", comment: ""), capital: NSLocalizedString("Pretoria", comment: "")),
+  CountryCapital(country: NSLocalizedString("South Sudan", comment: ""), capital: NSLocalizedString("Juba", comment: "")),
+  CountryCapital(country: NSLocalizedString("Jamaica", comment: ""), capital: NSLocalizedString("Kingston", comment: "")),
+  CountryCapital(country: NSLocalizedString("Japan", comment: ""), capital: NSLocalizedString("Tokyo", comment: "")),
+  CountryCapital(country: NSLocalizedString("Palestine", comment: ""), capital: NSLocalizedString("Jerusalem", comment: ""))
+  ]
+
 var dictionary = [
   "Австралия": "Канберра",
   "Андорра": "Андорра-ла-Велья",
