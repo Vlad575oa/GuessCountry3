@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainView: View {
+struct MainCountryView: View {
   @State private var guessOption = 0
   @State private var isAnimating = false
 
@@ -18,9 +18,7 @@ struct MainView: View {
       VStack {
         Picker(selection: $guessOption, label: Text("Угадывать:")) {
           Text("Country").tag(0)
-          
           Text("Capital").tag(1)
-          Text("Search").tag(2)
         }
         .pickerStyle(SegmentedPickerStyle())
         .padding()
@@ -38,10 +36,7 @@ struct MainView: View {
         if guessOption == 0 {
           CountryView()
         } else if guessOption ==  1 {
-
           CapitalView()
-        } else {
-          SearchView()
         }
       }
       }
@@ -49,8 +44,8 @@ struct MainView: View {
   }
 
 
-struct MainView_Previews: PreviewProvider {
+struct MainCountryView_Previews: PreviewProvider {
   static var previews: some View {
-    MainView()
+    MainCountryView()
   }
 }

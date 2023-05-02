@@ -9,8 +9,6 @@ import SwiftUI
 
 struct FlagView: View {
 
-  private var countries = Flags()
-
   @AppStorage("scoreFlag") private var score = 0
   @State private var isAnimating = false
   @State private var correctAnswer = Int.random(in: 0...2)
@@ -18,6 +16,8 @@ struct FlagView: View {
   @State private var scoreTitle = ""
   @State private var animationAmount: Double = 0
   @State private var colorCorrectAnswer: Color = .white
+
+  private var countries = Flags()
 
   var body: some View {
     ZStack {

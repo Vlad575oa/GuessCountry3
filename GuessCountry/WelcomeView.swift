@@ -26,12 +26,17 @@ struct WelcomeView: View {
 
             NavigationLink(destination: FlagView()) {
               Text("Guess the flag")
-                .modifier(TextModifier(color: .blue))
+                .modifier(TextModifier(color: .green))
             }
-            NavigationLink(destination: MainView()) {
+            NavigationLink(destination: MainCountryView()) {
               Text("Guess the country")
                 .modifier(TextModifier(color: .purple))
             }
+          NavigationLink(destination: MainSearchView()) {
+            Text("Search the flag or country")
+              .modifier(TextModifier(color: .orange))
+          }
+
 Spacer()
           }
         }

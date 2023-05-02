@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SearchView: View {
+struct SearchCountryView: View {
   var array = CountriesAndCapitals().countryAndCapital
 
   @State private var searchText = ""
@@ -25,21 +25,23 @@ struct SearchView: View {
                 RoundedRectangle(cornerRadius: 10)
                     .stroke(Color.gray, lineWidth: 1)
             )
-
-      List(filteredResults(for: searchText)) { countryCapital in
-        Text("\(countryCapital.country) - \(countryCapital.capital)")
-          .foregroundColor(.blue)
-          .background(ignoresSafeAreaEdges: .all)
-          .background(.white)
+      ScrollView {
+        LazyVStack(spacing: 20) {
+          ForEach(filteredResults(for: searchText)) { countryCapital in
+            Text("\(countryCapital.country) - \(countryCapital.capital)")
+              .foregroundColor(.black)
+              .frame(maxWidth: .infinity, alignment: .leading)
+          }
+        }
       }
-      .listStyle(.plain)
+
       .cornerRadius(15)
 
       Spacer()
     }
     .padding()
   }
-  
+
   func filteredResults(for searchQuery: String) -> [CountryCapital] {
     if searchQuery.isEmpty {
       return array // return the original array if the search query is empty
@@ -56,8 +58,8 @@ struct SearchView: View {
   }
 }
 
-struct SearchView_Previews: PreviewProvider {
+struct SearchCountryView_Previews: PreviewProvider {
   static var previews: some View {
-    SearchView()
+    SearchCountryView()
   }
 }
