@@ -99,7 +99,7 @@ struct CapitalView: View {
       // Answer is incorrect, show alert and increase wrong answers count
       wrongAnswersCount += 1
       let message = "\(NSLocalizedString("Wrong! Right answer:", comment: "")) \(currentCountry)"
-      let alert = UIAlertController(title: "Result", message: message, preferredStyle: .alert)
+      let alert = UIAlertController(title: NSLocalizedString("Result", comment: ""), message: message, preferredStyle: .alert)
       alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
         self.newQuestion()
       }))
@@ -114,24 +114,24 @@ struct CapitalView: View {
   func newQuestion() {
     withAnimation(.easeIn(duration: 0.5)) {
       // Get a random country and its corresponding capital from the array
-      let country = array.randomElement()!
-      currentCountry = country.capital
-      currentCapital = country.country
+      let countryCapital = array.randomElement()!
+      currentCountry = countryCapital.country
+      currentCapital = countryCapital.capital
       
       // Generate three possible answer options
       answerOptions = answerOptions(for: currentCountry)
     }
   }
   
-  func answerOptions(for capital: String) -> [String] {
-    var options = [capital]
+  func answerOptions(for country: String) -> [String] {
+    var options = [country]
     while options.count < 3 {
       // Choose a random country and its corresponding capital from the array
       let randomCountryCapital = array.randomElement()!
-      let randomCapital = randomCountryCapital.capital
+      let randomCountry = randomCountryCapital.country
       // Check that the selected capital is not the correct answer and is not already in the options
-      if randomCapital != capital && !options.contains(randomCapital) {
-        options.append(randomCapital)
+      if randomCountry != country && !options.contains(randomCountry) {
+        options.append(randomCountry)
       }
     }
     return options.shuffled()

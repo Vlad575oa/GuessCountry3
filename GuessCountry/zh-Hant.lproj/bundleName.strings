@@ -1,0 +1,9 @@
+/* 
+  bundleName.strings
+  GuessCountry
+
+  Created by user on 02.05.2023.
+  
+*/
+"CFBundleDisplayName" = "猜猜国家";
+"CFBundleName" = "猜猜国家";

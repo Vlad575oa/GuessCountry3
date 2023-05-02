@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE5DB62C29FC1AFC005D4369 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE5DB62E29FC1AFC005D4369 /* Localizable.strings */; };
+		CE9E56CE2A00FEAE00CAD033 /* bundleName.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE9E56D02A00FEAE00CAD033 /* bundleName.strings */; };
 		CED6E45329FAF2CF003DE15E /* GuessCountryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6E45229FAF2CF003DE15E /* GuessCountryApp.swift */; };
 		CED6E45729FAF2D0003DE15E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED6E45629FAF2D0003DE15E /* Assets.xcassets */; };
 		CED6E45A29FAF2D0003DE15E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED6E45929FAF2D0003DE15E /* Preview Assets.xcassets */; };
@@ -27,6 +28,9 @@
 		CE5DB62D29FC1AFC005D4369 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CE5DB62F29FC1B00005D4369 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CE91BC6B29FD33F2002D21AE /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CE9E56CF2A00FEAE00CAD033 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/bundleName.strings; sourceTree = "<group>"; };
+		CE9E56D22A00FF0C00CAD033 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/bundleName.strings"; sourceTree = "<group>"; };
+		CE9E56D32A00FF0E00CAD033 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/bundleName.strings; sourceTree = "<group>"; };
 		CED6E44F29FAF2CF003DE15E /* GuessCountry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessCountry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED6E45229FAF2CF003DE15E /* GuessCountryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessCountryApp.swift; sourceTree = "<group>"; };
 		CED6E45629FAF2D0003DE15E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 				CED6E47029FAF42B003DE15E /* Settings */,
 				CED6E45629FAF2D0003DE15E /* Assets.xcassets */,
 				CE5DB62E29FC1AFC005D4369 /* Localizable.strings */,
+				CE9E56D02A00FEAE00CAD033 /* bundleName.strings */,
 				CED6E45829FAF2D0003DE15E /* Preview Content */,
 			);
 			path = GuessCountry;
@@ -184,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CED6E45A29FAF2D0003DE15E /* Preview Assets.xcassets in Resources */,
+				CE9E56CE2A00FEAE00CAD033 /* bundleName.strings in Resources */,
 				CE5DB62C29FC1AFC005D4369 /* Localizable.strings in Resources */,
 				CED6E45729FAF2D0003DE15E /* Assets.xcassets in Resources */,
 			);
@@ -221,6 +227,16 @@
 				CE91BC6B29FD33F2002D21AE /* zh-Hant */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		CE9E56D02A00FEAE00CAD033 /* bundleName.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE9E56CF2A00FEAE00CAD033 /* en */,
+				CE9E56D22A00FF0C00CAD033 /* zh-Hant */,
+				CE9E56D32A00FF0E00CAD033 /* ru */,
+			);
+			name = bundleName.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
