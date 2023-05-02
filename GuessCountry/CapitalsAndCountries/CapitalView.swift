@@ -99,6 +99,8 @@ struct CapitalView: View {
       // Answer is incorrect, show alert and increase wrong answers count
       wrongAnswersCount += 1
       let message = "\(NSLocalizedString("Wrong! Right answer:", comment: "")) \(currentCountry)"
+
+
       let alert = UIAlertController(title: NSLocalizedString("Result", comment: ""), message: message, preferredStyle: .alert)
       alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
         self.newQuestion()

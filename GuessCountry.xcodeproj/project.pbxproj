@@ -31,6 +31,7 @@
 		CE9E56CF2A00FEAE00CAD033 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/bundleName.strings; sourceTree = "<group>"; };
 		CE9E56D22A00FF0C00CAD033 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/bundleName.strings"; sourceTree = "<group>"; };
 		CE9E56D32A00FF0E00CAD033 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/bundleName.strings; sourceTree = "<group>"; };
+		CE9E56D42A01190400CAD033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CED6E44F29FAF2CF003DE15E /* GuessCountry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessCountry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED6E45229FAF2CF003DE15E /* GuessCountryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessCountryApp.swift; sourceTree = "<group>"; };
 		CED6E45629FAF2D0003DE15E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,10 +78,11 @@
 		CED6E45129FAF2CF003DE15E /* GuessCountry */ = {
 			isa = PBXGroup;
 			children = (
+				CE9E56D42A01190400CAD033 /* Info.plist */,
 				CED6E45229FAF2CF003DE15E /* GuessCountryApp.swift */,
 				CED6E46E29FAF401003DE15E /* WelcomeView.swift */,
-				CED6E46D29FAF3AC003DE15E /* CapitalsAndCountries */,
 				CED6E46429FAF381003DE15E /* Flags */,
+				CED6E46D29FAF3AC003DE15E /* CapitalsAndCountries */,
 				CED6E47029FAF42B003DE15E /* Settings */,
 				CED6E45629FAF2D0003DE15E /* Assets.xcassets */,
 				CE5DB62E29FC1AFC005D4369 /* Localizable.strings */,
@@ -367,6 +369,7 @@
 				DEVELOPMENT_TEAM = BZ8K6AD5Y3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GuessCountry/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -399,6 +402,7 @@
 				DEVELOPMENT_TEAM = BZ8K6AD5Y3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GuessCountry/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

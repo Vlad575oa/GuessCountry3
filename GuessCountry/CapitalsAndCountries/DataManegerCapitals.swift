@@ -212,7 +212,7 @@ class CountriesAndCapitals {
   ]
   
   
-  var idd = [
+  var arrayCountryAndCapital = [
     "Australia": "Canberra",
     "Andorra": "Andorra la Vella",
     "Austria": "Vienna",
