@@ -18,11 +18,13 @@ struct MainView: View {
       VStack {
         Picker(selection: $guessOption, label: Text("Угадывать:")) {
           Text("Country").tag(0)
+          
           Text("Capital").tag(1)
           Text("Search").tag(2)
         }
         .pickerStyle(SegmentedPickerStyle())
         .padding()
+        .foregroundColor(.black)
         .onChange(of: guessOption) { _ in
           withAnimation(.easeOut(duration: 1.2)) {
             isAnimating = true
@@ -32,7 +34,6 @@ struct MainView: View {
           }
         }
         Spacer()
-        // Show either CapitalAndCountryView or CountryAndCapitalView based on the user's picker selection
 
         if guessOption == 0 {
           CountryView()

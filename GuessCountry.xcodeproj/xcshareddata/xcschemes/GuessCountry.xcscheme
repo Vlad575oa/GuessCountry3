@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CED6E44E29FAF2CF003DE15E"
-               BuildableName = "GuessCountry.app"
-               BlueprintName = "GuessCountry"
+               BuildableName = "Guess &#x441;ountry.app"
+               BlueprintName = "Guess &#x441;ountry"
                ReferencedContainer = "container:GuessCountry.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,7 +33,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = "en"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,8 +44,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CED6E44E29FAF2CF003DE15E"
-            BuildableName = "GuessCountry.app"
-            BlueprintName = "GuessCountry"
+            BuildableName = "Guess &#x441;ountry.app"
+            BlueprintName = "Guess &#x441;ountry"
             ReferencedContainer = "container:GuessCountry.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +61,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CED6E44E29FAF2CF003DE15E"
-            BuildableName = "GuessCountry.app"
-            BlueprintName = "GuessCountry"
+            BuildableName = "Guess &#x441;ountry.app"
+            BlueprintName = "Guess &#x441;ountry"
             ReferencedContainer = "container:GuessCountry.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

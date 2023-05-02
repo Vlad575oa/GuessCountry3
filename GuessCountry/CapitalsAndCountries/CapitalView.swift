@@ -35,12 +35,17 @@ struct CapitalView: View {
         .font(.system(size: 30))
         .padding()
         .background(.green.opacity(0.7))
+        .foregroundColor(.black)
         .cornerRadius(10)
+        .shadow(color: Color.gray.opacity(0.9), radius: 4, x: 4, y: 4)
+      
       
       Text("Country?")
         .font(.system(size: 30))
         .padding()
+        .foregroundColor(.black)
         .cornerRadius(10)
+        .shadow(color: Color.gray.opacity(0.9), radius: 3, x: 3, y: 3)
       
       ForEach(answerOptions, id: \.self) { option in
         Button(action: {
@@ -52,14 +57,22 @@ struct CapitalView: View {
             .padding()
             .background(Color.blue)
             .cornerRadius(10)
+            .shadow(color: Color.gray.opacity(0.9), radius: 3, x: 3, y: 3)
         }
       }
       HStack {
-        Text("Answer +: \(correctAnswersCount)")
+        Text("\(NSLocalizedString("Answer", comment: "")) +: \(correctAnswersCount)")
+          .font(.system(size: 20))
+          .foregroundColor(.black)
+          .shadow(color: Color.gray.opacity(0.9), radius: 3, x: 3, y: 3)
           .padding()
-        Text("Answer -: \(wrongAnswersCount)")
+        Text("\(NSLocalizedString("Answer", comment: "")) -: \(wrongAnswersCount)")
+          .font(.system(size: 20))
+          .foregroundColor(.black)
+          .shadow(color: Color.gray.opacity(0.9), radius: 3, x: 3, y: 3)
           .padding()
       }
+      
       Spacer()
       
       Button(action: {
@@ -73,21 +86,19 @@ struct CapitalView: View {
         }
       }) {
         Text("Reset")
-          .font(.system(size: 18, weight: .medium))
+          .font(.system(size: 20, weight: .medium))
           .font(.headline)
           .foregroundColor(.black)
-          .padding(.horizontal, 10)
-          .padding(.vertical, 5)
-          .background(isAnimating ? Color.green : Color.blue)
-          .cornerRadius(5)
-          .scaleEffect(isAnimating ? 1.1 : 1.0)
-          .shadow(color: Color.gray.opacity(0.9), radius: 4, x: 5, y: 5)
           .padding()
+          .background(isAnimating ? Color.green : Color.blue)
+          .cornerRadius(10)
+          .scaleEffect(isAnimating ? 1.1 : 1.0)
+          .shadow(color: Color.gray.opacity(0.9), radius: 3, x: 3, y: 3)
+          .padding(.bottom, 30)
       }
       .onAppear(perform: newQuestion)
     }
   }
-  
   
   // Generate new question
   func checkAnswer(_ answer: String) {
@@ -99,9 +110,9 @@ struct CapitalView: View {
       // Answer is incorrect, show alert and increase wrong answers count
       wrongAnswersCount += 1
       let message = "\(NSLocalizedString("Wrong! Right answer:", comment: "")) \(currentCountry)"
-
-
-      let alert = UIAlertController(title: NSLocalizedString("Result", comment: ""), message: message, preferredStyle: .alert)
+      
+      
+      let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
       alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
         self.newQuestion()
       }))
@@ -141,7 +152,7 @@ struct CapitalView: View {
 }
 
 struct CapitalView_Previews: PreviewProvider {
-    static var previews: some View {
-        CapitalView()
-    }
+  static var previews: some View {
+    CapitalView()
+  }
 }

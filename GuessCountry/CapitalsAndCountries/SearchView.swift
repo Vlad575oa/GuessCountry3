@@ -13,6 +13,33 @@ struct SearchView: View {
   @State private var searchText = ""
   @State private var filteredArray = CountriesAndCapitals().countryAndCapital
 
+  var body: some View {
+    VStack(spacing: 20) {
+      TextField(NSLocalizedString("Find a country or capital", comment: ""), text: $searchText)
+        .foregroundColor(.black)
+        .padding(.vertical, 10)
+        .padding(.horizontal, 20)
+        .background(.white)
+        .cornerRadius(10)
+        .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(Color.gray, lineWidth: 1)
+            )
+
+      List(filteredResults(for: searchText)) { countryCapital in
+        Text("\(countryCapital.country) - \(countryCapital.capital)")
+          .foregroundColor(.blue)
+          .background(ignoresSafeAreaEdges: .all)
+          .background(.white)
+      }
+      .listStyle(.plain)
+      .cornerRadius(15)
+
+      Spacer()
+    }
+    .padding()
+  }
+  
   func filteredResults(for searchQuery: String) -> [CountryCapital] {
     if searchQuery.isEmpty {
       return array // return the original array if the search query is empty
@@ -26,31 +53,6 @@ struct SearchView: View {
       }
       return filteredArray
     }
-  }
-
-  var body: some View {
-    VStack(spacing: 20) {
-      TextField(NSLocalizedString("  Find a country or capital", comment: ""), text: $searchText)
-        .padding(.vertical, 5)
-        .padding(.horizontal, 20)
-        .background(.white)
-        .cornerRadius(10)
-        .overlay(
-                RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color.gray, lineWidth: 1)
-            )
-
-      List(filteredResults(for: searchText)) { countryCapital in
-        Text("\(countryCapital.country) - \(countryCapital.capital)")
-         
-
-      }
-      .listStyle(.plain)
-      .cornerRadius(15)
-
-      Spacer()
-    }
-    .padding()
   }
 }
 
