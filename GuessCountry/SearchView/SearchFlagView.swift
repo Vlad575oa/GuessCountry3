@@ -16,7 +16,7 @@ private var filteredArray = Flags().flagArray
 
   var body: some View {
     VStack(spacing: 20) {
-      TextField(NSLocalizedString("Find a flag country", comment: ""), text: $searchText)
+      TextField(NSLocalizedString("Find the flag of the country", comment: ""), text: $searchText)
         .foregroundColor(.black)
         .padding(.vertical, 10)
         .padding(.horizontal, 20)
