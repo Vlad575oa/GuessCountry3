@@ -1,8 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Флаг Омана.png",
-      "idiom" : "universal"
+      "filename" : "Флаг Омана.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

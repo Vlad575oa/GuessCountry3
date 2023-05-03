@@ -1,6 +1,6 @@
 //
 //  DataManager.swift
-//  4Games
+//  
 //
 //  Created by user on 01.04.2023.
 //
@@ -13,11 +13,9 @@ struct FlagNames: Identifiable {
   let image: String
 }
 
-
 class Flags {
 
-  var flagArray: [FlagNames] = [
-    FlagNames(name: NSLocalizedString("Flag of Australia", comment: ""), image: "Флаг Австралии"),
+var flagArray: [FlagNames] = [
     FlagNames(name: NSLocalizedString("Flag of Australia", comment: ""), image: "Флаг Австралии"),
     FlagNames(name: NSLocalizedString("Flag of Andorra", comment: ""), image: "Флаг Андорры"),
     FlagNames(name: NSLocalizedString("Flag of Austria", comment: ""), image: "Флаг Австрии"),
@@ -29,7 +27,7 @@ class Flags {
     FlagNames(name: NSLocalizedString("Flag of Andorra", comment: ""), image: "Флаг Андорры"),
     FlagNames(name: NSLocalizedString("Flag of Armenia", comment: ""), image: "Флаг Армении"),
     FlagNames(name: NSLocalizedString("Flag of Afghanistan", comment: ""), image: "Флаг Афганистана"),
-    FlagNames(name: NSLocalizedString("Flag of the Bahamas", comment: ""), image: "Флаг Багамских Островов"),
+    FlagNames(name: NSLocalizedString("Flag of Bahamas", comment: ""), image: "Флаг Багамских островов"),
     FlagNames(name: NSLocalizedString("Flag of Bangladesh", comment: ""), image: "Флаг Бангладеш"),
     FlagNames(name: NSLocalizedString("Flag of Barbados", comment: ""), image: "Флаг Барбадоса"),
     FlagNames(name: NSLocalizedString("Flag of Bahrain", comment: ""), image: "Флаг Бахрейна"),
@@ -42,45 +40,46 @@ class Flags {
     FlagNames(name: NSLocalizedString("Flag of Bosnia and Herzegovina", comment: ""), image: "Флаг Боснии и Герцеговины"),
 
     FlagNames(name: NSLocalizedString("Flag of Botswana", comment: ""), image: "Флаг Ботсваны"),
-       FlagNames(name: NSLocalizedString("Flag of Brazil", comment: ""), image: "Флаг Бразилии"),
-       FlagNames(name: NSLocalizedString("Flag of Brunei", comment: ""), image: "Флаг Брунея"),
-       FlagNames(name: NSLocalizedString("Flag of Burkina Faso", comment: ""), image: "Флаг Буркина-Фасо"),
-       FlagNames(name: NSLocalizedString("Flag of Burundi", comment: ""), image: "Флаг Бурунди"),
-       FlagNames(name: NSLocalizedString("Flag of Bhutan", comment: ""), image: "Флаг Бутана"),
-       FlagNames(name: NSLocalizedString("Flag of Vanuatu", comment: ""), image: "Флаг Вануату"),
-       FlagNames(name: NSLocalizedString("Flag of United Kingdom", comment: ""), image: "Флаг Великобритании"),
-       FlagNames(name: NSLocalizedString("Flag of Hungary", comment: ""), image: "Флаг Венгрии"),
-       FlagNames(name: NSLocalizedString("Flag of Venezuela", comment: ""), image: "Флаг Венесуэлы"),
-       FlagNames(name: NSLocalizedString("Flag of East Timor", comment: ""), image: "Флаг Восточного Тимора"),
-       FlagNames(name: NSLocalizedString("Flag of Vietnam", comment: ""), image: "Флаг Вьетнама"),
-       FlagNames(name: NSLocalizedString("Flag of Gabon", comment: ""), image: "Флаг Габона"),
-       FlagNames(name: NSLocalizedString("Flag of Haiti", comment: ""), image: "Флаг Гаити"),
-       FlagNames(name: NSLocalizedString("Flag of Gambia", comment: ""), image: "Флаг Гамбии"),
-       FlagNames(name: NSLocalizedString("Flag of Ghana", comment: ""), image: "Флаг Ганы"),
-       FlagNames(name: NSLocalizedString("Flag of Guatemala", comment: ""), image: "Флаг Гватемалы"),
-       FlagNames(name: NSLocalizedString("Flag of Guinea", comment: ""), image: "Флаг Гвинеи"),
-       FlagNames(name: NSLocalizedString("Flag of Guinea-Bissau", comment: ""), image: "Флаг Гвинеи-Бисау"),
-       FlagNames(name: NSLocalizedString("Flag of Germany", comment: ""), image: "Флаг Германии"),
-       FlagNames(name: NSLocalizedString("Flag of Honduras", comment: ""), image: "Флаг Гондураса"),
+    FlagNames(name: NSLocalizedString("Flag of Brazil", comment: ""), image: "Флаг Бразилии"),
+    FlagNames(name: NSLocalizedString("Flag of Brunei", comment: ""), image: "Флаг Брунея"),
+    FlagNames(name: NSLocalizedString("Flag of Burkina Faso", comment: ""), image: "Флаг Буркина-Фасо"),
+    FlagNames(name: NSLocalizedString("Flag of Burundi", comment: ""), image: "Флаг Бурунди"),
+    FlagNames(name: NSLocalizedString("Flag of Bhutan", comment: ""), image: "Флаг Бутана"),
+    FlagNames(name: NSLocalizedString("Flag of Vanuatu", comment: ""), image: "Флаг Вануату"),
+    FlagNames(name: NSLocalizedString("Flag of United Kingdom", comment: ""), image: "Флаг Великобритании"),
+    FlagNames(name: NSLocalizedString("Flag of Hungary", comment: ""), image: "Флаг Венгрии"),
+    FlagNames(name: NSLocalizedString("Flag of Venezuela", comment: ""), image: "Флаг Венесуэлы"),
+    FlagNames(name: NSLocalizedString("Flag of East Timor", comment: ""), image: "Флаг Восточного Тимора"),
+    FlagNames(name: NSLocalizedString("Flag of Vietnam", comment: ""), image: "Флаг Вьетнама"),
+    FlagNames(name: NSLocalizedString("Flag of Gabon", comment: ""), image: "Флаг Габона"),
+    FlagNames(name: NSLocalizedString("Flag of Haiti", comment: ""), image: "Флаг Гаити"),
+    FlagNames(name: NSLocalizedString("Flag of Gambia", comment: ""), image: "Флаг Гамбии"),
+    FlagNames(name: NSLocalizedString("Flag of Ghana", comment: ""), image: "Флаг Ганы"),
+    FlagNames(name: NSLocalizedString("Flag of Guatemala", comment: ""), image: "Флаг Гватемалы"),
+    FlagNames(name: NSLocalizedString("Flag of Guinea", comment: ""), image: "Флаг Гвинеи"),
+    FlagNames(name: NSLocalizedString("Flag of Guinea-Bissau", comment: ""), image: "Флаг Гвинеи-Бисау"),
+    FlagNames(name: NSLocalizedString("Flag of Germany", comment: ""), image: "Флаг Германии"),
+    FlagNames(name: NSLocalizedString("Flag of Honduras", comment: ""), image: "Флаг Гондураса"),
 
     FlagNames(name: NSLocalizedString("Flag of Grenada", comment: ""), image: "Флаг Гренады"),
-        FlagNames(name: NSLocalizedString("Flag of Greece", comment: ""), image: "Флаг Греции"),
-        FlagNames(name: NSLocalizedString("Flag of Georgia", comment: ""), image: "Флаг Грузии"),
-        FlagNames(name: NSLocalizedString("Flag of Denmark", comment: ""), image: "Флаг Дании"),
-        FlagNames(name: NSLocalizedString("Flag of the Republic of Congo", comment: ""), image: "Флаг Республики Конго"),
-        FlagNames(name: NSLocalizedString("Flag of Egypt", comment: ""), image: "Флаг Египта"),
-        FlagNames(name: NSLocalizedString("Flag of Zambia", comment: ""), image: "Флаг Замбии"),
-        FlagNames(name: NSLocalizedString("Flag of Zimbabwe", comment: ""), image: "Флаг Зимбабве"),
-        FlagNames(name: NSLocalizedString("Flag of Israel", comment: ""), image: "Флаг Израиля"),
-        FlagNames(name: NSLocalizedString("Flag of India", comment: ""), image: "Флаг Индии"),
-        FlagNames(name: NSLocalizedString("Flag of Indonesia", comment: ""), image: "Флаг Индонезии"),
-        FlagNames(name: NSLocalizedString("Flag of Jordan", comment: ""), image: "Флаг Иордании"),
-        FlagNames(name: NSLocalizedString("Flag of Iraq", comment: ""), image: "Флаг Ирака"),
-        FlagNames(name: NSLocalizedString("Flag of Ireland", comment: ""), image: "Флаг Ирландии"),
-        FlagNames(name: NSLocalizedString("Flag of Iceland", comment: ""), image: "Флаг Исландии"),
-        FlagNames(name: NSLocalizedString("Flag of Spain", comment: ""), image: "Флаг Испании"),
-        FlagNames(name: NSLocalizedString("Flag of Italy", comment: ""), image: "Флаг Италии"),
-        FlagNames(name: NSLocalizedString("Flag of Yemen", comment: ""), image: "Флаг Йемена"),
+    FlagNames(name: NSLocalizedString("Flag of Greece", comment: ""), image: "Флаг Греции"),
+    FlagNames(name: NSLocalizedString("Flag of Georgia", comment: ""), image: "Флаг Грузии"),
+    FlagNames(name: NSLocalizedString("Flag of Denmark", comment: ""), image: "Флаг Дании"),
+    FlagNames(name: NSLocalizedString("Flag of Republic of Congo", comment: ""), image: "Флаг Республики Конго"),
+    FlagNames(name: NSLocalizedString("Flag of Republic of Congo", comment: ""), image: "Флаг Конго"),
+    FlagNames(name: NSLocalizedString("Flag of Egypt", comment: ""), image: "Флаг Египта"),
+    FlagNames(name: NSLocalizedString("Flag of Zambia", comment: ""), image: "Флаг Замбии"),
+    FlagNames(name: NSLocalizedString("Flag of Zimbabwe", comment: ""), image: "Флаг Зимбабве"),
+    FlagNames(name: NSLocalizedString("Flag of Israel", comment: ""), image: "Флаг Израиля"),
+    FlagNames(name: NSLocalizedString("Flag of India", comment: ""), image: "Флаг Индии"),
+    FlagNames(name: NSLocalizedString("Flag of Indonesia", comment: ""), image: "Флаг Индонезии"),
+    FlagNames(name: NSLocalizedString("Flag of Jordan", comment: ""), image: "Флаг Иордании"),
+    FlagNames(name: NSLocalizedString("Flag of Iraq", comment: ""), image: "Флаг Ирака"),
+    FlagNames(name: NSLocalizedString("Flag of Ireland", comment: ""), image: "Флаг Ирландии"),
+    FlagNames(name: NSLocalizedString("Flag of Iceland", comment: ""), image: "Флаг Исландии"),
+    FlagNames(name: NSLocalizedString("Flag of Spain", comment: ""), image: "Флаг Испании"),
+    FlagNames(name: NSLocalizedString("Flag of Italy", comment: ""), image: "Флаг Италии"),
+    FlagNames(name: NSLocalizedString("Flag of Yemen", comment: ""), image: "Флаг Йемена"),
 
     FlagNames(name: NSLocalizedString("Flag of Cape Verde", comment: ""), image: "Флаг Кабо-Верде"),
     FlagNames(name: NSLocalizedString("Flag of Kazakhstan", comment: ""), image: "Флаг Казахстана"),
@@ -92,9 +91,9 @@ class Flags {
     FlagNames(name: NSLocalizedString("Flag of Kyrgyzstan", comment: ""), image: "Флаг Киргизии"),
     FlagNames(name: NSLocalizedString("Flag of China", comment: ""), image: "Флаг Китая"),
     FlagNames(name: NSLocalizedString("Flag of Colombia", comment: ""), image: "Флаг Колумбии"),
-    FlagNames(name: NSLocalizedString("Flag of Comoros", comment: ""), image: "Флаг Комор"),
+    FlagNames(name: NSLocalizedString("Flag of Comoros", comment: ""), image: "Флаг Коморских островов"),
     FlagNames(name: NSLocalizedString("Flag of Costa Rica", comment: ""), image: "Флаг Коста-Рики"),
-    FlagNames(name: NSLocalizedString("Flag of Ivory Coast", comment: ""), image: "Флаг Кот-д’Ивуара"),
+    FlagNames(name: NSLocalizedString("Flag of Ivory Coast", comment: ""), image: "Флаг Кот-д`Ивуара"),
     FlagNames(name: NSLocalizedString("Flag of Cuba", comment: ""), image: "Флаг Кубы"),
     FlagNames(name: NSLocalizedString("Flag of Kuwait", comment: ""), image: "Флаг Кувейта"),
     FlagNames(name: NSLocalizedString("Flag of Laos", comment: ""), image: "Флаг Лаоса"),
@@ -106,7 +105,7 @@ class Flags {
     FlagNames(name: NSLocalizedString("Flag of Mauritius", comment: ""), image: "Флаг Маврикия"),
     FlagNames(name: NSLocalizedString("Flag of Mauritania", comment: ""), image: "Флаг Мавритании"),
     FlagNames(name: NSLocalizedString("Flag of Madagascar", comment: ""), image: "Флаг Мадагаскара"),
-    FlagNames(name: NSLocalizedString("Flag of North Macedonia", comment: ""), image: "Флаг Македонии"),
+    FlagNames(name: NSLocalizedString("Flag of Macedonia", comment: ""), image: "Флаг Македонии"),
     FlagNames(name: NSLocalizedString("Flag of Malaysia", comment: ""), image: "Флаг Малайзии"),
     FlagNames(name: NSLocalizedString("Flag of Mali", comment: ""), image: "Флаг Мали"),
     FlagNames(name: NSLocalizedString("Flag of Maldives", comment: ""), image: "Флаг Мальдив"),
@@ -121,23 +120,24 @@ class Flags {
     FlagNames(name: NSLocalizedString("Flag of Namibia", comment: ""), image: "Флаг Намибии"),
     FlagNames(name: NSLocalizedString("Flag of Nigeria", comment: ""), image: "Флаг Нигерии"),
 
-    FlagNames(name: NSLocalizedString("Flag of the Netherlands", comment: ""), image: "Флаг Нидерландов"),
+    FlagNames(name: NSLocalizedString("Flag of Netherlands", comment: ""), image: "Флаг Нидерландов"),
     FlagNames(name: NSLocalizedString("Flag of Nicaragua", comment: ""), image: "Флаг Никарагуа"),
     FlagNames(name: NSLocalizedString("Flag of New Zealand", comment: ""), image: "Флаг Новой Зеландии"),
     FlagNames(name: NSLocalizedString("Flag of Norway", comment: ""), image: "Флаг Норвегии"),
-    FlagNames(name: NSLocalizedString("Flag of the United Arab Emirates", comment: ""), image: "Флаг Объединённых Арабских Эмиратов"),
+    FlagNames(name: NSLocalizedString("Flag of United Arab Emirates", comment: ""), image: "Флаг Объединённых Арабских Эмиратов"),
     FlagNames(name: NSLocalizedString("Flag of Oman", comment: ""), image: "Флаг Омана"),
     FlagNames(name: NSLocalizedString("Flag of Pakistan", comment: ""), image: "Флаг Пакистана"),
     FlagNames(name: NSLocalizedString("Flag of Panama", comment: ""), image: "Флаг Панамы"),
     FlagNames(name: NSLocalizedString("Flag of Papua New Guinea", comment: ""), image: "Флаг Папуа — Новой Гвинеи"),
     FlagNames(name: NSLocalizedString("Flag of Paraguay", comment: ""), image: "Флаг Парагвая"),
+    FlagNames(name: NSLocalizedString("Flag of Palestinе", comment: ""), image: "Флаг Палестины"),
     FlagNames(name: NSLocalizedString("Flag of Peru", comment: ""), image: "Флаг Перу"),
     FlagNames(name: NSLocalizedString("Flag of Poland", comment: ""), image: "Флаг Польши"),
     FlagNames(name: NSLocalizedString("Flag of Portugal", comment: ""), image: "Флаг Португалии"),
     FlagNames(name: NSLocalizedString("Flag of Cyprus", comment: ""), image: "Флаг Республики Кипр"),
-    FlagNames(name: NSLocalizedString("Flag of the Republic of the Congo", comment: ""), image: "Флаг Республики Конго"),
+
     FlagNames(name: NSLocalizedString("Flag of South Korea", comment: ""), image: "Флаг Республики Корея"),
-    FlagNames(name: NSLocalizedString("Flag of Kosovo", comment: ""), image: "Флаг Республики Косово"),
+    FlagNames(name: NSLocalizedString("Flag of Kosovo", comment: ""), image: "Флаг Косово"),
     FlagNames(name: NSLocalizedString("Flag of Russia", comment: ""), image: "Флаг России"),
     FlagNames(name: NSLocalizedString("Flag of Rwanda", comment: ""), image: "Флаг Руанды"),
     FlagNames(name: NSLocalizedString("Flag of Romania", comment: ""), image: "Флаг Румынии"),
@@ -146,42 +146,42 @@ class Flags {
     FlagNames(name: NSLocalizedString("Flag of Samoa", comment: ""), image: "Флаг Самоа"),
     FlagNames(name: NSLocalizedString("Flag of San Marino", comment: ""), image: "Флаг Сан-Марино"),
     FlagNames(name: NSLocalizedString("Flag of Saudi Arabia", comment: ""), image: "Флаг Саудовской Аравии"),
-    FlagNames(name: NSLocalizedString("Flag of Seychelles", comment: ""), image: "Флаг Сейшельских Островов"),
+    FlagNames(name: NSLocalizedString("Flag of Seychelles", comment: ""), image: "Флаг Сейшельских островов"),
     FlagNames(name: NSLocalizedString("Flag of Senegal", comment: ""), image: "Флаг Сенегала"),
     FlagNames(name: NSLocalizedString("Flag of Serbia", comment: ""), image: "Флаг Сербии"),
     FlagNames(name: NSLocalizedString("Flag of Singapore", comment: ""), image: "Флаг Сингапура"),
     FlagNames(name: NSLocalizedString("Flag of Syria", comment: ""), image: "Флаг Сирии"),
     FlagNames(name: NSLocalizedString("Flag of Slovakia", comment: ""), image: "Флаг Словакии"),
     FlagNames(name: NSLocalizedString("Flag of Slovenia", comment: ""), image: "Флаг Словении"),
-    FlagNames(name: NSLocalizedString("Flag of the United States of America", comment: ""), image: "Флаг Соединённых Штатов Америки"),
-    FlagNames(name: NSLocalizedString("Flag of the Solomon Islands", comment: ""), image: "Флаг Соломоновых Островов"),
+    FlagNames(name: NSLocalizedString("Flag of United States of America", comment: ""), image: "Флаг Соединённых Штатов Америки"),
+    FlagNames(name: NSLocalizedString("Flag of Solomon Islands", comment: ""), image: "Флаг Соломоновых островов"),
     FlagNames(name: NSLocalizedString("Flag of Somalia", comment: ""), image: "Флаг Сомали"),
     FlagNames(name: NSLocalizedString("Flag of Sudan", comment: ""), image: "Флаг Судана"),
     FlagNames(name: NSLocalizedString("Flag of Suriname", comment: ""), image: "Флаг Суринама"),
     FlagNames(name: NSLocalizedString("Flag of Sierra Leone", comment: ""), image: "Флаг Сьерра-Леоне"),
     FlagNames(name: NSLocalizedString("Flag of Tajikistan", comment: ""), image: "Флаг Таджикистана"),
-    FlagNames(name: NSLocalizedString("Flag of Thailand", comment: ""), image: "Флаг Таиланда"),
+    FlagNames(name: NSLocalizedString("Flag of Thailand", comment: ""), image: "Флаг Тайланда"),
 
     FlagNames(name: NSLocalizedString("Flag of Tanzania", comment: ""), image: "Флаг Танзании"),
     FlagNames(name: NSLocalizedString("Flag of Tonga", comment: ""), image: "Флаг Тонга"),
     FlagNames(name: NSLocalizedString("Flag of Trinidad and Tobago", comment: ""), image: "Флаг Тринидада и Тобаго"),
     FlagNames(name: NSLocalizedString("Flag of Tunisia", comment: ""), image: "Флаг Туниса"),
-    FlagNames(name: NSLocalizedString("Flag of Turkmenistan", comment: ""), image: "Флаг Туркмении"),
+    FlagNames(name: NSLocalizedString("Flag of Turkmenistan", comment: ""), image: "Флаг Туркменистана"),
     FlagNames(name: NSLocalizedString("Flag of Turkey", comment: ""), image: "Флаг Турции"),
     FlagNames(name: NSLocalizedString("Flag of Uganda", comment: ""), image: "Флаг Уганды"),
     FlagNames(name: NSLocalizedString("Flag of Uzbekistan", comment: ""), image: "Флаг Узбекистана"),
     FlagNames(name: NSLocalizedString("Flag of Ukraine", comment: ""), image: "Флаг Украины"),
     FlagNames(name: NSLocalizedString("Flag of Uruguay", comment: ""), image: "Флаг Уругвая"),
-    FlagNames(name: NSLocalizedString("Flag of the Federated States of Micronesia", comment: ""), image: "Флаг Федеративных Штатов Микронезии"),
+    FlagNames(name: NSLocalizedString("Flag of Federated States of Micronesia", comment: ""), image: "Флаг Федеративных Штатов Микронезии"),
     FlagNames(name: NSLocalizedString("Flag of Fiji", comment: ""), image: "Флаг Фиджи"),
-    FlagNames(name: NSLocalizedString("Flag of the Philippines", comment: ""), image: "Флаг Филиппин"),
+    FlagNames(name: NSLocalizedString("Flag of Philippines", comment: ""), image: "Флаг Филиппин"),
     FlagNames(name: NSLocalizedString("Flag of Finland", comment: ""), image: "Флаг Финляндии"),
     FlagNames(name: NSLocalizedString("Flag of France", comment: ""), image: "Флаг Франции"),
     FlagNames(name: NSLocalizedString("Flag of Croatia", comment: ""), image: "Флаг Хорватии"),
-    FlagNames(name: NSLocalizedString("Flag of the Cook Islands", comment: ""), image: "Флаг Островов Кука"),
+    FlagNames(name: NSLocalizedString("Flag of Cook Islands", comment: ""), image: "Флаг Островов Кука"),
     FlagNames(name: NSLocalizedString("Flag of Chad", comment: ""), image: "Флаг Чада"),
     FlagNames(name: NSLocalizedString("Flag of Montenegro", comment: ""), image: "Флаг Черногории"),
-    FlagNames(name: NSLocalizedString("Flag of the Czech Republic", comment: ""), image: "Флаг Чехии"),
+    FlagNames(name: NSLocalizedString("Flag of Czech Republic", comment: ""), image: "Флаг Чехии"),
 
     FlagNames(name: NSLocalizedString("Flag of Chile", comment: ""), image: "Флаг Чили"),
     FlagNames(name: NSLocalizedString("Flag of Switzerland", comment: ""), image: "Флаг Швейцарии"),
@@ -195,14 +195,17 @@ class Flags {
     FlagNames(name: NSLocalizedString("Flag of South Africa", comment: ""), image: "Флаг Южно-Африканской Республики"),
     FlagNames(name: NSLocalizedString("Flag of South Sudan", comment: ""), image: "Флаг Южного Судана"),
     FlagNames(name: NSLocalizedString("Flag of Jamaica", comment: ""), image: "Флаг Ямайки"),
-    FlagNames(name: NSLocalizedString("Flag of Japan", comment: ""), image: "Флаг Японии"),
-    FlagNames(name: NSLocalizedString("Palestinian flag", comment: ""), image: "Палестинский флаг")
+    FlagNames(name: NSLocalizedString("Flag of Japan", comment: ""), image: "Флаг Японии")
 
-  ].shuffled()
+]
 
-  var fl = ["Флаг Брунея","Флаг Буркина-Фасо","Флаг Бурунди","Флаг Бутана","Флаг Вануату","Флаг Великобритании","Флаг Венгрии","Флаг Венесуэлы","Флаг Восточного Тимора","Флаг Вьетнама","Флаг Габона","Флаг Гаити","Флаг Гамбии","Флаг Ганы","Флаг Гватемалы","Флаг Гвинеи","Флаг Гвинеи-Бисау","Флаг Германии","Флаг Гондураса","Флаг Гренады","Флаг Греции","Флаг Грузии","Флаг Дании","Флаг Республики Конго","Флаг Египта","Флаг Замбии","Флаг Зимбабве","Флаг Израиля","Флаг Индии","Флаг Индонезии","Флаг Иордании","Флаг Ирака","Флаг Ирландии","Флаг Исландии","Флаг Испании","Флаг Италии","Флаг Йемена","Флаг Кабо-Верде","Флаг Казахстана","Флаг Камбоджи","Флаг Камеруна","Флаг Канады","Флаг Катара","Флаг Кении","Флаг Киргизии","Флаг Китая","Флаг Колумбии","Флаг Комор","Флаг Коста-Рики","Флаг Кот-д’Ивуара","Флаг Кубы","Флаг Кувейта","Флаг Лаоса","Флаг Латвии","Флаг Ливии","Флаг Литвы","Флаг Люксембурга","Флаг Маврикия","Флаг Мавритании","Флаг Мадагаскара","Флаг Македонии","Флаг Малайзии","Флаг Мали","Флаг Мальдив","Флаг Мальты","Флаг Марокко","Флаг Мексики","Флаг Мозамбика","Флаг Молдавии","Флаг Монако","Флаг Монголии","Флаг Мьянмы","Флаг Намибии","Флаг Нигерии","Флаг Нидерландов","Флаг Никарагуа","Флаг Новой Зеландии","Флаг Норвегии", "Флаг Объединённых Арабских Эмиратов","Флаг Омана","Флаг Пакистана","Флаг Панамы","Флаг Папуа — Новой Гвинеи","Флаг Парагвая","Флаг Перу","Флаг Польши","Флаг Португалии","Флаг Республики Кипр","Флаг Республики Конго","Флаг Республики Корея","Флаг Республики Косово","Флаг России","Флаг Руанды","Флаг Румынии","Флаг Сальвадора","Флаг Самоа","Флаг Сан-Марино","Флаг Саудовской Аравии","Флаг Сейшельских Островов","Флаг Сенегала","Флаг Сербии","Флаг Сингапура","Флаг Сирии","Флаг Словакии","Флаг Словении","Флаг Соединённых Штатов Америки","Флаг Соломоновых Островов","Флаг Сомали","Флаг Судана","Флаг Суринама","Флаг Сьерра-Леоне","Флаг Таджикистана","Флаг Таиланда","Флаг Танзании","Флаг Тонга","Флаг Тринидада и Тобаго","Флаг Туниса","Флаг Туркмении","Флаг Турции","Флаг Уганды","Флаг Узбекистана","Флаг Украины","Флаг Уругвая","Флаг Федеративных Штатов Микронезии","Флаг Фиджи","Флаг Филиппин","Флаг Финляндии","Флаг Франции","Флаг Хорватии","Флаг Островов Кука","Флаг Чада","Флаг Черногории","Флаг Чехии","Флаг Чили","Флаг Швейцарии","Флаг Швеции","Флаг Шри-Ланки","Флаг Эквадора","Флаг Экваториальной Гвинеи","Флаг Эритреи","Флаг Эстонии","Флаг Эфиопии","Флаг Южно-Африканской Республики","Флаг Южного Судана","Флаг Ямайки","Флаг Японии","Палестинский флаг"]
 
+  deinit {
+         print("Flags class instance is being deallocated")
+     }
 }
+
+
 
 
 

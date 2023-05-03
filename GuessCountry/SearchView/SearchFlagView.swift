@@ -9,10 +9,10 @@ import SwiftUI
 
 struct SearchFlagView: View {
 
-@State private var searchText = ""
 
-private var array = Flags().flagArray
-private var filteredArray = Flags().flagArray
+  @State private var searchText = ""
+
+  private var array = Flags()
 
   var body: some View {
     VStack(spacing: 20) {
@@ -23,22 +23,22 @@ private var filteredArray = Flags().flagArray
         .background(.white)
         .cornerRadius(10)
         .overlay(
-                RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color.gray, lineWidth: 1)
-            )
+          RoundedRectangle(cornerRadius: 10)
+            .stroke(Color.gray, lineWidth: 1)
+        )
       ScrollView {
         LazyVStack(alignment: .leading) {
-
-                   ForEach(filteredResults(for: searchText)) { flag in
-                     HStack {
-                       Image(flag.image)
-                         .resizable()
-                       .frame(width: 50, height: 30)
-                       Text(flag.name)
-                     }
-                   }
-               }
-           }
+          ForEach(filteredResults(for: searchText)) { flag in
+            HStack {
+              Image(flag.image)
+                .resizable()
+                .aspectRatio(contentMode:.fit)
+                .frame(width: 50, height: 30)
+              Text(flag.name)
+            }
+          }
+        }
+      }
       .cornerRadius(5)
 
       Spacer()
@@ -47,14 +47,15 @@ private var filteredArray = Flags().flagArray
   }
 
   func filteredResults(for searchQuery: String) -> [FlagNames] {
-//    let emptyArray  = [FlagNames(name: "Enter name country a TextField", image: "")]
+
+    //    let emptyArray  = [FlagNames(name: "Enter name country a TextField", image: "")]
     if searchQuery.isEmpty {
-      return array // return the original array if the search query is empty
+      return array.flagArray // return the original array if the search query is empty
     } else {
       // Filter the array to include only the elements whose country or capital contains the search query
-        let filteredArray = array.filter { flag in
+      let filteredArray = array.flagArray.filter { flag in
         let lowercaseSearchQuery = searchQuery.lowercased()
-          let lowercase = flag.name.lowercased()
+        let lowercase = flag.name.lowercased()
 
         return lowercase.contains(lowercaseSearchQuery)
       }
@@ -65,21 +66,21 @@ private var filteredArray = Flags().flagArray
 
 
 struct SearchFlagView_Previews: PreviewProvider {
-    static var previews: some View {
-        SearchFlagView()
-    }
+  static var previews: some View {
+    SearchFlagView()
+  }
 }
 
 
 struct LazyFlagRowView: View {
-    let flag: FlagNames
+  let flag: FlagNames
 
-    var body: some View {
-        HStack {
-            Image(flag.image)
-                .resizable()
-                .frame(width: 50, height: 30)
-            Text(flag.name)
-        }
+  var body: some View {
+    HStack {
+      Image(flag.image)
+        .resizable()
+        .frame(width: 50, height: 30)
+      Text(flag.name)
     }
+  }
 }

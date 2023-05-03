@@ -2,7 +2,7 @@
   Localizable.strings
   GuessCountry
 
-  Created by user on 28.04.2023.
+  Created by user on 28.04.2023.xx
   
 */
 "Menu" = "菜单";
@@ -23,12 +23,13 @@
 "Score" = "得分";
 "Total score" = "总得分";
 "Continue" = "继续";
+"Right answer!" = "正确答案!";
 "Right answer" = "正确答案";
 "You have chosen" = "你选择了";
-"Find the flag of the country" = "查找国家的国旗";
+"Find the flag of the country" = "Найди флаг страны";
 "Find the flag" = "查找标志";
 "Find the country" = "查找国家";
-"Search" ="搜索"="搜索";
+"Search" ="搜索";
 
 
 "Flag of Australia" = "澳大利亚国旗";
@@ -41,7 +42,7 @@
 "Flag of Argentina" = "阿根廷国旗";
 "Flag of Armenia" = "亚美尼亚国旗";
 "Flag of Afghanistan" = "阿富汗国旗";
-"Flag of the Bahamas" = "巴哈马国旗";
+"Flag of Bahamas" = "巴哈马国旗";
 "Flag of Bangladesh" = "孟加拉国国旗";
 "Flag of Barbados" = "巴巴多斯国旗";
 "Flag of Bahrain" = "巴林国旗";
@@ -590,4 +591,5 @@
 "Kingston" = "金斯敦";
 "Tokyo" = "东京";
 "Jerusalem" = "耶路撒冷";
+
 

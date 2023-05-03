@@ -1,8 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Флаг Великобритании.png",
-      "idiom" : "universal"
+      "filename" : "Флаг Великобритании.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

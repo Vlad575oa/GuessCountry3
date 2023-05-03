@@ -29,7 +29,7 @@
 /* Begin PBXFileReference section */
 		CE5DB62D29FC1AFC005D4369 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CE5DB62F29FC1B00005D4369 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		CE91BC6B29FD33F2002D21AE /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CE8209872A023A6D000C9C67 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CE9E56CF2A00FEAE00CAD033 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE9E56D22A00FF0C00CAD033 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		CE9E56D32A00FF0E00CAD033 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -242,7 +242,7 @@
 			children = (
 				CE5DB62D29FC1AFC005D4369 /* en */,
 				CE5DB62F29FC1B00005D4369 /* ru */,
-				CE91BC6B29FD33F2002D21AE /* zh-Hant */,
+				CE8209872A023A6D000C9C67 /* zh-Hant */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

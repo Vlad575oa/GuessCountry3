@@ -1,8 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Флаг Казахстана.png",
-      "idiom" : "universal"
+      "filename" : "Флаг Казахстана.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

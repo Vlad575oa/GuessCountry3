@@ -24,6 +24,7 @@
 "Total score" = "Total score";
 "Continue" = "Continue";
 "Right answer" = "Right answer";
+"Right answer!" = "Right answer!";
 "You have chosen" = "You have chosen";
 "Find the flag of the country" = "Find the flag of the country";
 "Find the flag" = "Find the flag";
@@ -42,7 +43,7 @@
 "Flag of Andorra" = "Flag of Andorra";
 "Flag of Armenia" = "Flag of Armenia";
 "Flag of Afghanistan" = "Flag of Afghanistan";
-"Flag of the Bahamas" = "Flag of the Bahamas";
+"Flag of Bahamas" = "Flag of the Bahamas";
 "Flag of Bangladesh" = "Flag of Bangladesh";
 "Flag of Barbados" = "Flag of Barbados";
 "Flag of Bahrain" = "Flag of Bahrain";
@@ -59,6 +60,8 @@
 "Flag of Burkina Faso" = "Flag of Burkina Faso";
 "Flag of Burundi" = "Flag of Burundi";
 "Flag of Bhutan" = "Flag of Bhutan";
+
+"Flag og Cyprus" = "Flag og Cyprus";
 "Flag of Vanuatu" = "Flag of Vanuatu";
 "Flag of United Kingdom" = "Flag of United Kingdom";
 "Flag of Hungary" = "Flag of Hungary";
@@ -201,7 +204,7 @@
 "Flag of South Sudan" = "Flag of South Sudan";
 "Flag of Jamaica" = "Flag of Jamaica";
 "Flag of Japan" = "Flag of Japan";
-"Flag of Palestine" = "Flag of Palestine";
+"Flag of Palestinе" = "Flag of Palestinе";
 
 
 
@@ -233,6 +236,7 @@
 "Burkina Faso" = "Burkina Faso";
 "Burundi" = "Burundi";
 "Bhutan" = "Bhutan";
+"Nikosia" = "Nikosia";
 "Vanuatu" = "Vanuatu";
 "United Kingdom" = "United Kingdom";
 "Hungary" = "Hungary";
@@ -254,7 +258,7 @@
 "Greece" = "Greece";
 "Georgia" = "Georgia";
 "Denmark" = "Denmark";
-"Democratic Republic of the Congo" = "Democratic Republic of the Congo";
+"Democratic Republic of Congo" = "Democratic Republic of the Congo";
 "Djibouti" = "Djibouti";
 "Dominica" = "Dominica";
 "Dominican Republic" = "Dominican Republic";
@@ -328,7 +332,7 @@
 "Poland" = "Poland";
 "Portugal" = "Portugal";
 "Cyprus" = "Cyprus";
-"Republic of the Congo" = "Republic of the Congo";
+"Republic of Congo" = "Republic of the Congo";
 "South Korea" = "South Korea";
 "Republic of Kosovo" = "Republic of Kosovo";
 "Russia" = "Russia";
@@ -422,6 +426,7 @@
 "La Paz" = "La Paz";
 "Sarajevo" = "Sarajevo";
 "Gaborone" = "Gaborone";
+"Nikosia" = "Nikosia";
 "Brasília" = "Brasília";
 "Bandar Seri Begawan" = "Bandar Seri Begawan";
 "Ouagadougou" = "Ouagadougou";

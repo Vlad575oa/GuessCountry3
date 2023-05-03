@@ -1,8 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Флаг Филиппин.png",
-      "idiom" : "universal"
+      "filename" : "Флаг Филиппин.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

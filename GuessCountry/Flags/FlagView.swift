@@ -61,7 +61,7 @@ struct FlagView: View {
           }
           Spacer()
             .frame(height: 30)
-          Text("Score \(score)")
+          Text("\(NSLocalizedString("Score", comment: "")) \(score)")
             .foregroundColor(.white)
             .font(.largeTitle)
             .cornerRadius(30)
@@ -94,7 +94,7 @@ struct FlagView: View {
           title: Text(scoreTitle)
             .foregroundColor(.red)
             .font(.headline),
-          message: Text("Total score \(score)")
+          message: Text("\(NSLocalizedString("Total score", comment: "")) \(score)")
             .font(.headline)
           ,
           buttons: [
@@ -123,7 +123,7 @@ struct FlagView: View {
     } else {
       scoreTitle = """
 \(NSLocalizedString("You have chosen", comment:"")) \(countries.flagArray[number].name)
-\(NSLocalizedString("Right answer", comment: "")) \(correctAnswer + 1)
+\(NSLocalizedString("Right answer!", comment: "")) \(correctAnswer + 1)
 """
       score -= 1
     }

@@ -1,8 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Флаг Тринидада и Тобаго.png",
-      "idiom" : "universal"
+      "filename" : "Флаг Тринидад и Тобаго.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

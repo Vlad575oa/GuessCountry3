@@ -23,6 +23,7 @@
 "Score" = "Счёт";
 "Total score" = "Общий счёт";
 "Continue" = "Продолжить";
+"Right answer!" = "Правильный ответ!";
 "Right answer" = "Правильный ответ";
 "You have chosen" = "Вы выбрали";
 "Find the flag of the country" = "Найди флаг страны";
@@ -42,7 +43,7 @@
 "Flag of Andorra" = "Флаг Андорры";
 "Flag of Armenia" = "Флаг Армении";
 "Flag of Afghanistan" = "Флаг Афганистана";
-"Flag of the Bahamas" = "Флаг Багамских Островов";
+"Flag of Bahamas" = "Флаг Багамских Островов";
 "Flag of Bangladesh" = "Флаг Бангладеш";
 "Flag of Barbados" = "Флаг Барбадоса";
 "Flag of Bahrain" = "Флаг Бахрейна";
@@ -201,7 +202,7 @@
 "Flag of South Sudan" = "Флаг Южного Судана";
 "Flag of Jamaica" = "Флаг Ямайки";
 "Flag of Japan" = "Флаг Японии";
-"Flag of Palestine" = "Палестинский флаг";
+"Flag of Palestine" = "Флаг Палестины";
 
 
 "Australia" = "Австралия";
@@ -425,6 +426,7 @@
 "Bujumbura" = "Бужумбура";
 "Thimphu" = "Тхимпху";
 "Port Vila" = "Порт-Вила";
+"Nikosia" = "Nikosia";
 "London" = "Лондон";
 "Budapest" = "Будапешт";
 "Caracas" = "Каракас";

@@ -1,8 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Флаг Словении.png",
-      "idiom" : "universal"
+      "filename" : "Флаг Словении.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

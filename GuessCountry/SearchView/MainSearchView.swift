@@ -17,8 +17,8 @@ struct MainSearchView: View {
       LinearGradient(gradient: Gradient(colors: [.yellow, .purple]),startPoint: .top, endPoint: .bottom ).ignoresSafeArea()
       VStack {
         Picker(selection: $guessOption, label: Text("Угадывать:")) {
-          Text("Find the flag").tag(1)
-          Text("Find the country").tag(0)
+          Text("Find the country").tag(1)
+          Text("Find the flag").tag(0)
 
         }
         .pickerStyle(SegmentedPickerStyle())

@@ -1,8 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Флаг Бельгии.png",
-      "idiom" : "universal"
+      "filename" : "Флаг Бельгии.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {
