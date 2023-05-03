@@ -36,7 +36,7 @@
 		CE9E56D42A01190400CAD033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE9E56D62A01366800CAD033 /* SearchFlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlagView.swift; sourceTree = "<group>"; };
 		CE9E56D82A01379100CAD033 /* MainSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchView.swift; sourceTree = "<group>"; };
-		CED6E44F29FAF2CF003DE15E /* Guess сountry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess сountry.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED6E44F29FAF2CF003DE15E /* Find all the flags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find all the flags.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED6E45229FAF2CF003DE15E /* GuessCountryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessCountryApp.swift; sourceTree = "<group>"; };
 		CED6E45629FAF2D0003DE15E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CED6E45929FAF2D0003DE15E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 		CED6E45029FAF2CF003DE15E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CED6E44F29FAF2CF003DE15E /* Guess сountry.app */,
+				CED6E44F29FAF2CF003DE15E /* Find all the flags.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,9 +147,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CED6E44E29FAF2CF003DE15E /* Guess сountry */ = {
+		CED6E44E29FAF2CF003DE15E /* Find all the flags */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CED6E45D29FAF2D0003DE15E /* Build configuration list for PBXNativeTarget "Guess сountry" */;
+			buildConfigurationList = CED6E45D29FAF2D0003DE15E /* Build configuration list for PBXNativeTarget "Find all the flags" */;
 			buildPhases = (
 				CED6E44B29FAF2CF003DE15E /* Sources */,
 				CED6E44C29FAF2CF003DE15E /* Frameworks */,
@@ -159,9 +159,9 @@
 			);
 			dependencies = (
 			);
-			name = "Guess сountry";
+			name = "Find all the flags";
 			productName = GuessCountry;
-			productReference = CED6E44F29FAF2CF003DE15E /* Guess сountry.app */;
+			productReference = CED6E44F29FAF2CF003DE15E /* Find all the flags.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -194,7 +194,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CED6E44E29FAF2CF003DE15E /* Guess сountry */,
+				CED6E44E29FAF2CF003DE15E /* Find all the flags */,
 			);
 		};
 /* End PBXProject section */
@@ -452,7 +452,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CED6E45D29FAF2D0003DE15E /* Build configuration list for PBXNativeTarget "Guess сountry" */ = {
+		CED6E45D29FAF2D0003DE15E /* Build configuration list for PBXNativeTarget "Find all the flags" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CED6E45E29FAF2D0003DE15E /* Debug */,

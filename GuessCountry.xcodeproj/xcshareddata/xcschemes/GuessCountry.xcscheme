@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CED6E44E29FAF2CF003DE15E"
-               BuildableName = "Guess &#x441;ountry.app"
-               BlueprintName = "Guess &#x441;ountry"
+               BuildableName = "Find all the flags.app"
+               BlueprintName = "Find all the flags"
                ReferencedContainer = "container:GuessCountry.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CED6E44E29FAF2CF003DE15E"
-            BuildableName = "Guess &#x441;ountry.app"
-            BlueprintName = "Guess &#x441;ountry"
+            BuildableName = "Find all the flags.app"
+            BlueprintName = "Find all the flags"
             ReferencedContainer = "container:GuessCountry.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CED6E44E29FAF2CF003DE15E"
-            BuildableName = "Guess &#x441;ountry.app"
-            BlueprintName = "Guess &#x441;ountry"
+            BuildableName = "Find all the flags.app"
+            BlueprintName = "Find all the flags"
             ReferencedContainer = "container:GuessCountry.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
