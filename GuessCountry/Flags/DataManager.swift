@@ -66,7 +66,7 @@ var flagArray: [FlagNames] = [
     FlagNames(name: NSLocalizedString("Flag of Georgia", comment: ""), image: "Флаг Грузии"),
     FlagNames(name: NSLocalizedString("Flag of Denmark", comment: ""), image: "Флаг Дании"),
     FlagNames(name: NSLocalizedString("Flag of Republic of Congo", comment: ""), image: "Флаг Республики Конго"),
-    FlagNames(name: NSLocalizedString("Flag of Republic of Congo", comment: ""), image: "Флаг Конго"),
+    FlagNames(name: NSLocalizedString("Flag of Congo", comment: ""), image: "Флаг Конго"),
     FlagNames(name: NSLocalizedString("Flag of Egypt", comment: ""), image: "Флаг Египта"),
     FlagNames(name: NSLocalizedString("Flag of Zambia", comment: ""), image: "Флаг Замбии"),
     FlagNames(name: NSLocalizedString("Flag of Zimbabwe", comment: ""), image: "Флаг Зимбабве"),
@@ -134,7 +134,7 @@ var flagArray: [FlagNames] = [
     FlagNames(name: NSLocalizedString("Flag of Peru", comment: ""), image: "Флаг Перу"),
     FlagNames(name: NSLocalizedString("Flag of Poland", comment: ""), image: "Флаг Польши"),
     FlagNames(name: NSLocalizedString("Flag of Portugal", comment: ""), image: "Флаг Португалии"),
-    FlagNames(name: NSLocalizedString("Flag of Cyprus", comment: ""), image: "Флаг Республики Кипр"),
+    FlagNames(name: NSLocalizedString("Flag of Cyprus", comment: ""), image: "Флаг Кипра"),
 
     FlagNames(name: NSLocalizedString("Flag of South Korea", comment: ""), image: "Флаг Республики Корея"),
     FlagNames(name: NSLocalizedString("Flag of Kosovo", comment: ""), image: "Флаг Косово"),

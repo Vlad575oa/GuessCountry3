@@ -24,7 +24,7 @@
 "Total score" = "Общий счёт";
 "Continue" = "Продолжить";
 "Right answer!" = "Правильный ответ!";
-"Right answer" = "Правильный ответ";
+"Right answer:" = "Правильный ответ:";
 "You have chosen" = "Вы выбрали";
 "Find the flag of the country" = "Найди флаг страны";
 "Find the flag" = "Найди флаг";
@@ -79,7 +79,8 @@
 "Flag of Greece" = "Флаг Греции";
 "Flag of Georgia" = "Флаг Грузии";
 "Flag of Denmark" = "Флаг Дании";
-"Flag of Republic of Congo" = "Флаг Демократической Республики Конго";
+
+"Flag of Congo" = "Флаг Конго";
 "Flag of Egypt" = "Флаг Египта";
 "Flag of Zambia" = "Флаг Замбии";
 "Flag of Zimbabwe" = "Флаг Зимбабве";
@@ -143,7 +144,7 @@
 "Flag of Peru" = "Флаг Перу";
 "Flag of Poland" = "Флаг Польши";
 "Flag of Portugal" = "Флаг Португалии";
-"Flag of Republic of Cyprus" = "Флаг Республики Кипр";
+"Flag of Cyprus" = "Флаг Кипра";
 "Flag of Republic of Congo" = "Флаг Республики Конго";
 "Flag of South Korea" = "Флаг Республики Корея";
 "Flag of Kosovo" = "Флаг Косово";
@@ -326,8 +327,8 @@
 "Peru" = "Перу";
 "Poland" = "Польша";
 "Portugal" = "Португалия";
-"Cyprus" = "Республика Кипр";
-"Republic of the Congo" = "Республика Конго";
+"Cyprus" = "Кипр";
+"Congo" = "Конго";
 "South Korea" = "Республика Корея";
 "Republic of Kosovo" = "Республика Косово";
 "Russia" = "Россия";

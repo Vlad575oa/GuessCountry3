@@ -118,12 +118,12 @@ struct FlagView: View {
 
   func flagTapped(_ number: Int) {
     if number == correctAnswer {
-      scoreTitle = "Right answer!"
+      scoreTitle =  NSLocalizedString("Right answer!", comment: "")
       score += 1
     } else {
       scoreTitle = """
 \(NSLocalizedString("You have chosen", comment:"")) \(countries.flagArray[number].name)
-\(NSLocalizedString("Right answer!", comment: "")) \(correctAnswer + 1)
+\(NSLocalizedString("Right answer:", comment: "")) \(correctAnswer + 1)
 """
       score -= 1
     }

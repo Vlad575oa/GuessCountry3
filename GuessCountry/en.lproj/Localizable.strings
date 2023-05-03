@@ -23,7 +23,7 @@
 "Score" = "Score";
 "Total score" = "Total score";
 "Continue" = "Continue";
-"Right answer" = "Right answer";
+"Right answer:" = "Right answer:";
 "Right answer!" = "Right answer!";
 "You have chosen" = "You have chosen";
 "Find the flag of the country" = "Find the flag of the country";
@@ -61,7 +61,6 @@
 "Flag of Burundi" = "Flag of Burundi";
 "Flag of Bhutan" = "Flag of Bhutan";
 
-"Flag og Cyprus" = "Flag og Cyprus";
 "Flag of Vanuatu" = "Flag of Vanuatu";
 "Flag of United Kingdom" = "Flag of United Kingdom";
 "Flag of Hungary" = "Flag of Hungary";
@@ -82,6 +81,7 @@
 "Flag of Georgia" = "Flag of Georgia";
 "Flag of Denmark" = "Flag of Denmark";
 "Flag of Republic of Congo" = "Flag of Republic of Congo";
+"Flag of Congo" = "Flag of Congo";
 "Flag of Egypt" = "Flag of Egypt";
 "Flag of Zambia" = "Flag of Zambia";
 "Flag of Zimbabwe" = "Flag of Zimbabwe";
@@ -145,7 +145,7 @@
 "Flag of Peru" = "Flag of Peru";
 "Flag of Poland" = "Flag of Poland";
 "Flag of Portugal" = "Flag of Portugal";
-"Flag of Republic of Cyprus" = "Flag of Republic of Cyprus";
+"Flag of Cyprus" = "Flag of Cyprus";
 "Flag of Republic of Congo" = "Flag of Republic of Congo";
 "Flag of South Korea" = "Flag of South Korea";
 "Flag of Kosovo" = "Flag of Kosovo";

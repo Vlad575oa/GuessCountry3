@@ -24,7 +24,7 @@
 "Total score" = "总得分";
 "Continue" = "继续";
 "Right answer!" = "正确答案!";
-"Right answer" = "正确答案";
+"Right answer:" = "正确答案:";
 "You have chosen" = "你选择了";
 "Find the flag of the country" = "Найди флаг страны";
 "Find the flag" = "查找标志";
@@ -80,6 +80,7 @@
 "Flag of Georgia" = "格鲁吉亚国旗";
 "Flag of Denmark" = "丹麦国旗";
 "Flag of Republic of Congo" = "刚果共和国国旗";
+"Flag of Congo" = "Флаг Конго";
 "Flag of Egypt" = "埃及国旗";
 "Flag of Zambia" = "赞比亚国旗";
 "Flag of Zimbabwe" = "津巴布韦国旗";
