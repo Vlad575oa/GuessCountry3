@@ -27,19 +27,19 @@ private var filteredArray = Flags().flagArray
                     .stroke(Color.gray, lineWidth: 1)
             )
       ScrollView {
-        ForEach(filteredResults(for: searchText)) { flag in
-          HStack {
-            Image(flag.image)
-              .resizable()
-              .frame(width: 50, height: 30)
-            Text(flag.name)
-              .foregroundColor(.black)
-              .frame(maxWidth: .infinity, alignment: .leading)
-          }
-        }
-      }
+        LazyVStack(alignment: .leading) {
 
-      .cornerRadius(15)
+                   ForEach(filteredResults(for: searchText)) { flag in
+                     HStack {
+                       Image(flag.image)
+                         .resizable()
+                       .frame(width: 50, height: 30)
+                       Text(flag.name)
+                     }
+                   }
+               }
+           }
+      .cornerRadius(5)
 
       Spacer()
     }
@@ -47,6 +47,7 @@ private var filteredArray = Flags().flagArray
   }
 
   func filteredResults(for searchQuery: String) -> [FlagNames] {
+//    let emptyArray  = [FlagNames(name: "Enter name country a TextField", image: "")]
     if searchQuery.isEmpty {
       return array // return the original array if the search query is empty
     } else {
@@ -66,5 +67,19 @@ private var filteredArray = Flags().flagArray
 struct SearchFlagView_Previews: PreviewProvider {
     static var previews: some View {
         SearchFlagView()
+    }
+}
+
+
+struct LazyFlagRowView: View {
+    let flag: FlagNames
+
+    var body: some View {
+        HStack {
+            Image(flag.image)
+                .resizable()
+                .frame(width: 50, height: 30)
+            Text(flag.name)
+        }
     }
 }

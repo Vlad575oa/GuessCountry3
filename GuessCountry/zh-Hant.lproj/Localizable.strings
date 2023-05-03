@@ -25,6 +25,10 @@
 "Continue" = "继续";
 "Right answer" = "正确答案";
 "You have chosen" = "你选择了";
+"Find the flag" = "查找标志";
+"Find the country" = "查找国家";
+"Search" ="搜索"="搜索";
+
 
 "Flag of Australia" = "澳大利亚国旗";
 "Flag of Andorra" = "安道尔国旗";
@@ -585,3 +589,4 @@
 "Kingston" = "金斯敦";
 "Tokyo" = "东京";
 "Jerusalem" = "耶路撒冷";
+

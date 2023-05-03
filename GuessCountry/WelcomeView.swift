@@ -33,7 +33,7 @@ struct WelcomeView: View {
                 .modifier(TextModifier(color: .purple))
             }
           NavigationLink(destination: MainSearchView()) {
-            Text("Search the flag or country")
+            Text("Search")
               .modifier(TextModifier(color: .orange))
           }
 
