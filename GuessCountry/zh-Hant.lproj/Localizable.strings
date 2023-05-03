@@ -26,7 +26,7 @@
 "Right answer!" = "正确答案!";
 "Right answer:" = "正确答案:";
 "You have chosen" = "你选择了";
-"Find the flag of the country" = "Найди флаг страны";
+"Find the flag of the country" = "找到国家的国旗";
 "Find the flag" = "查找标志";
 "Find the country" = "查找国家";
 "Search" ="搜索";
@@ -236,6 +236,7 @@
 "Burkina Faso" = "布基纳法索";
 "Burundi" = "布隆迪";
 "Bhutan" = "不丹";
+"Nikosia" = "尼科西亚";
 "Vanuatu" = "瓦努阿图";
 "United Kingdom" = "英国";
 "Hungary" = "匈牙利";
@@ -257,7 +258,7 @@
 "Greece" = "希腊";
 "Georgia" = "格鲁吉亚";
 "Denmark" = "丹麦";
-"Democratic Republic of the Congo" = "刚果民主共和国";
+"Congo" = "刚果";
 "Djibouti" = "吉布提";
 "Dominica" = "多米尼克";
 "Dominican Republic" = "多米尼加共和国";

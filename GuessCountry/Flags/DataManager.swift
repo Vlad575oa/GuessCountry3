@@ -199,10 +199,6 @@ var flagArray: [FlagNames] = [
 
 ]
 
-
-  deinit {
-         print("Flags class instance is being deallocated")
-     }
 }
 
 
